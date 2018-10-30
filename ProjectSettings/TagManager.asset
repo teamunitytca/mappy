@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Radio
+  - TV
+  - MicroComputer
+  - Monarisa
+  - Safe
   layers:
   - Default
   - TransparentFX

@@ -200,7 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23888c6386806034fb25a35e3933325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _now_score: 0
   _text: {fileID: 28403062}
 --- !u!1 &104292751
 GameObject:
@@ -684,8 +683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bec9b4fb5fadc448340da45df7eae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _high_score: 1000
   _text: {fileID: 1150696820}
+  _score: {fileID: 28403064}
 --- !u!114 &1150696820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,13 +844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cef1907fe858114793a674e74cc2cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _HP: 2
-  _life_counter:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1711408463
 GameObject:
   m_ObjectHideFlags: 0
