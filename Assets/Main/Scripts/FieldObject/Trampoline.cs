@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Trampoline : MonoBehaviour {
-	int _HP = 3;
+	int _Trampoline_HP = 3;
 
 	// Use this for initialization
 	void Start ( ) {
@@ -17,11 +15,11 @@ public class Trampoline : MonoBehaviour {
 
 	void OnCollisionEnter2D ( Collision2D collision ) {
 		if ( gameObject.tag == "Player" ) {
-			_HP--;
+			_Trampoline_HP--;
 		}
 	}
 
-	public void resetHP ( ) {
-		_HP = 3;
+	public void resetTrampolineHP ( ) {
+		_Trampoline_HP = 3;
 	}
 }

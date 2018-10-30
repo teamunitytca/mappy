@@ -1,24 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour {
+	[SerializeField] GameObject _startPos = null;
 	[SerializeField] float _speed = 0;
 	[SerializeField] float _jump_power = 0;
 	Rigidbody2D _rb;
-	bool isjump;
+	LifeCounter _life;
 
 	// Use this for initialization
 	void Start ( ) {
 		_rb = GetComponent<Rigidbody2D>( );
-		isjump = true;
-
+		_life = GameObject.Find("LifeCounter").GetComponent<LifeCounter>( );
 	}
 
 	// Update is called once per frame
 	void Update ( ) {
 		move( );
-		jump( );
+		if ( transform.position.y <= -5 ) {
+			_life.loseLife( );
+			resetPos( );
+		}
 	}
 
 	void move ( ) {
@@ -27,14 +28,17 @@ public class Player : MonoBehaviour {
 	}
 
 	void jump ( ) {
-		if ( Input.GetButtonDown( "Jump" ) && !isjump ) {
-			_rb.AddForce( Vector2.up * _jump_power );
-			isjump = true;
-		}
+		_rb.AddForce( Vector2.up * _jump_power );
+	}
+
+	void resetPos ( ) {
+		transform.position = _startPos.transform.position;
 	}
 
 	void OnCollisionEnter2D ( Collision2D collision ) {
-		isjump = false;
+		if ( collision.gameObject.tag == "Enemy" ) {
+			_life.loseLife( );
+			resetPos( );
+		}
 	}
-
 }
