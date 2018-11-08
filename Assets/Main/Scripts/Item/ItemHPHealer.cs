@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 public class ItemHPHealer : Item {
-	LifeCounter _life = null;
-
+	[SerializeField] LifeCounter _life = null;
 	// Use this for initialization
 	void Start ( ) {
 		_life = GameObject.Find( "LifeCounter" ).GetComponent<LifeCounter>( );

@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 public class NowScore : MonoBehaviour {
-	int _now_score = 0;
+	[SerializeField] int _now_score = 0;
 	[SerializeField] Text _text = null;
 
 	// Use this for initialization
@@ -13,13 +13,6 @@ public class NowScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update ( ) {
 		_text.text = "NOW SCORE" + "\n" + _now_score.ToString( "D2" );
-	}
 
-	public void addScore ( int score ) {
-		_now_score += score;
-	}
-
-	public int getScore ( ) {
-		return _now_score;
 	}
 }
