@@ -2,10 +2,10 @@
 using UnityEngine.UI;
 
 public class LifeCounter : MonoBehaviour {
-	[SerializeField] int _HP = 2;
-	[SerializeField] Image[ ] _life_counter = null;
-
 	const int HP_MAX = 5;
+	int _HP = 2;
+	Image[ ] _life_counter = new Image[ HP_MAX ];
+
 	
 	// Use this for initialization
 	void Start ( ) {

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
 public class ItemTimer : Item {
-	[SerializeField] Timer _timer = null;
 	const float TIME_INCREMENT = 5.0f;
+	Timer _timer;
 	// Use this for initialization
 	void Start ( ) {
 		_timer = GameObject.Find( "TimeText" ).GetComponent<Timer>( );
