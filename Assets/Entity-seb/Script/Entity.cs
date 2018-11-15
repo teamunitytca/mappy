@@ -24,11 +24,15 @@ public class Entity : MonoBehaviour
     protected Rigidbody2D _rigidbody;
     protected Collider2D _collider;
 
+    GameObject _player;
+
     protected void Awake()
     {
         _animator = gameObject.GetComponent<Animator>();
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
         _collider = gameObject.GetComponent<Collider2D>();
+
+        _player = GameObject.FindWithTag("Player");
     }
 
     protected void SetRandomDir()
