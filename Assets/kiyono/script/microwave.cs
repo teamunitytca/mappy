@@ -9,15 +9,17 @@ public class microwave : MonoBehaviour {
 
 
 	void Start () {
-
+		
+	
 		rb = GetComponent<Rigidbody2D>();
 
 	}
 	
 
 	void Update () {
-
-		rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-
+		
+		if (Input.GetMouseButtonDown (0)) 
+			rb.velocity = new Vector2 (moveSpeed, rb.velocity.y);
+		
 	}
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class trampoline : MonoBehaviour {
 
 	private Animator animator = null;
-	public Rigidbody2D player;
+	int count = 0;
 
 	// Use this for initialization
 	void Start ( ) {
@@ -17,10 +17,19 @@ public class trampoline : MonoBehaviour {
 
 	}
 	void OnCollisionEnter2D( Collision2D collision ){
+
 		if ( collision.gameObject.tag == "Player" ) {
 			Debug.Log ( "まっぴー" );
-			animator.SetTrigger ( "Jump" );
-			player.velocity = new Vector2 ( 0, 10 );
+			count++;
 		}
+
+		animator.SetTrigger ( "Jump" );
+		Rigidbody2D hit_obj = collision.gameObject.GetComponent< Rigidbody2D >( );
+		hit_obj.velocity = new Vector2 ( 0, 10 );
+
+		if (count == 3) {
+			GetComponent< BoxCollider2D >( ).enabled = false;
+		}
+
 	}	
 }
