@@ -109,6 +109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 0.1
   _state: 2
+  _isOnGrond: 0
+  _falled: 0
+  _fallTime: 100
 --- !u!212 &212625584924221830
 SpriteRenderer:
   m_ObjectHideFlags: 1
