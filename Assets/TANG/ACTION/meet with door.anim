@@ -17,10 +17,16 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
+        time: 0.033333335
         value: {x: 0, y: 0, z: 90}
-        inSlope: {x: -0, y: 0, z: 0}
-        outSlope: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: {x: 0, y: 0, z: 90}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -33,8 +39,10 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300012, guid: db6858988dd7a3c48b76bf55611bd3bc, type: 3}
-    - time: 0.25
+    - time: 0.033333335
       value: {fileID: 21300012, guid: db6858988dd7a3c48b76bf55611bd3bc, type: 3}
+    - time: 0.25
+      value: {fileID: 21300012, guid: 3452d4ffc94eb7644a30e86e00a0636d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -63,6 +71,7 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 21300012, guid: db6858988dd7a3c48b76bf55611bd3bc, type: 3}
     - {fileID: 21300012, guid: db6858988dd7a3c48b76bf55611bd3bc, type: 3}
+    - {fileID: 21300012, guid: 3452d4ffc94eb7644a30e86e00a0636d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -88,10 +97,16 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
+        time: 0.033333335
         value: 0
-        inSlope: -0
-        outSlope: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -104,10 +119,16 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
+        time: 0.033333335
         value: 0
-        inSlope: -0
-        outSlope: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -120,10 +141,16 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
+        time: 0.033333335
         value: 90
-        inSlope: -0
-        outSlope: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.25
+        value: 90
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -166,4 +193,11 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
