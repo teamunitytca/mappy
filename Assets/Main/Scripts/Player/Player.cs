@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
 public class Player : MonoBehaviour {
-	[SerializeField] bool _movable = true;
+	float _move_input = 0;
+	[ SerializeField] bool _movable = true;
 	[SerializeField] float _speed = 0;
 	[SerializeField] GameObject _startPos = null;
 	Rigidbody2D _rb;
@@ -25,12 +26,12 @@ public class Player : MonoBehaviour {
 	}
 
 	void move ( ) {
-		float move = Input.GetAxisRaw( "Horizontal" );
-		transform.position += new Vector3( move * _speed, 0, 0 ) * Time.deltaTime;
-		if ( move < 0 ) {
+		_move_input = Input.GetAxisRaw( "Horizontal" );
+		transform.position += new Vector3( _move_input * _speed, 0, 0 ) * Time.deltaTime;
+		if ( _move_input < 0 ) {
 			transform.localScale = new Vector3( 5, 5, 1 );
 		}
-		if ( move > 0 ) {
+		if ( _move_input > 0 ) {
 			transform.localScale = new Vector3( -5, 5, 1 );
 		}
 
@@ -38,7 +39,12 @@ public class Player : MonoBehaviour {
 
 	void jump ( ) {
 		_movable = false;
-		_rb.velocity = new Vector2( 50, 250 ) * Time.deltaTime;
+		if ( _move_input < 0 ) {
+			_rb.velocity = new Vector2( -50, 250 ) * Time.deltaTime;
+		}
+		if ( _move_input > 0 ) {
+			_rb.velocity = new Vector2( 50, 250 ) * Time.deltaTime;
+		}
 	}
 
 	void resetPos ( ) {

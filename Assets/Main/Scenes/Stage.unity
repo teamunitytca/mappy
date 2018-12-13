@@ -511,10 +511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a7abcb3bbd5c4ca2811f3c6f0cdc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startPos: {fileID: 2014663247}
-  _speed: 5
-  _jump_power: 200
   _movable: 1
+  _speed: 5
+  _startPos: {fileID: 2014663247}
 --- !u!1 &2014663247
 GameObject:
   m_ObjectHideFlags: 0
