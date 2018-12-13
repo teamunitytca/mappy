@@ -1,51 +1,53 @@
 ﻿using UnityEngine;
 
-public class Player : MonoBehaviour {
-	[SerializeField] bool _movable = true;
-	[SerializeField] float _speed = 0;
-	[SerializeField] GameObject _startPos = null;
-	Rigidbody2D _rb;
+public class Player : Entity
+{
+	[SerializeField]
+    GameObject _startPos = null;
 	LifeCounter _life;
 
 	// Use this for initialization
-	void Start ( ) {
-		_rb = GetComponent<Rigidbody2D>( );
+	void Start()
+    {
 		_life = GameObject.Find( "LifeCounter" ).GetComponent<LifeCounter>( );
 	}
 
-	// Update is called once per frame
-	void Update ( ) {
-		if ( _movable ) {
-			move( );
-		}
-		if ( transform.position.y <= -5 ) {
-			_life.loseLife( );
-			resetPos( );
-		}
+    private void Update()
+    {
+        _move_input = Input.GetAxisRaw("Horizontal");
+
+        if (_move_input < 0 && _movable)
+        {
+            _state = MOVING.LEFT;
+        }
+
+        if (_move_input > 0 && _movable)
+        {
+            _state = MOVING.RIGTH;
+        }
+
+        if (_move_input == 0 || !_movable)
+        {
+            _state = MOVING.IDLE;
+        }
+    }
+
+    void FixedUpdate( )
+    {
+        Move();
+
+        if (transform.position.y < -3)
+        {
+            _life.loseLife();
+            transform.position = _startPos.transform.position;
+        }
 	}
 
-	void move ( ) {
-		float move = Input.GetAxisRaw( "Horizontal" );
-		transform.position += new Vector3( move * _speed, 0, 0 ) * Time.deltaTime;
-		if ( move < 0 ) {
-			transform.localScale = new Vector3( 5, 5, 1 );
-		}
-		if ( move > 0 ) {
-			transform.localScale = new Vector3( -5, 5, 1 );
-		}
-
-	}
-
-	void jump ( ) {
-		_movable = false;
-		_rb.velocity = new Vector2( 50, 250 ) * Time.deltaTime;
-	}
-
-	void resetPos ( ) {
+	void resetPos( ) {
 		transform.position = _startPos.transform.position;
 	}
 
-	void OnCollisionEnter2D ( Collision2D collision ) {
+	void OnCollisionEnter2D( Collision2D collision ) {
 		if ( collision.gameObject.tag == "Enemy" ) {
 			_life.loseLife( );
 			resetPos( );
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour {
 		_movable = true;
 	}
 
-	void OnCollisionExit2D ( Collision2D collision ) {
+	void OnCollisionExit2D( Collision2D collision ) {
 		if ( collision.gameObject.tag == "Floor" ) {
 			jump( );
 		}

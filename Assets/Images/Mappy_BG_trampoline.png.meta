@@ -87,7 +87,7 @@ TextureImporter:
     21300164: Mappy_BG_trampoline_82
     21300166: Mappy_BG_trampoline_83
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -127,21 +127,18 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -151,8 +148,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -177,14 +173,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 99955111920f112468ede7645b31b84c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_1
       rect:
@@ -197,14 +192,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: e967e7ddf8c05ce47a0b956989677419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_2
       rect:
@@ -217,14 +211,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -18, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: c94194639fe499041b18f37691016465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_3
       rect:
@@ -237,14 +231,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -16, y: -6}
+        - {x: 12, y: -6}
+        - {x: 17, y: -5}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3d1500045a66ca6479fb427dbdf3c30d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_4
       rect:
@@ -257,14 +252,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 20, y: 6}
+        - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 16, y: -4}
+        - {x: 20, y: 0}
       tessellationDetail: 0
-      bones: []
-      spriteID: f0020aade587e1c40bba76e258b22b32
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_5
       rect:
@@ -277,14 +272,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: df6bdb4ac569d134fa6bc482c261c0f5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_6
       rect:
@@ -297,14 +292,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 19, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 31977ff9a8dfe1a45a3602060c15e35b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_7
       rect:
@@ -317,14 +312,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: a90a363c5b4ed3546b5276dcada2f250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_8
       rect:
@@ -337,14 +332,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -17, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 78f6a16d9e2d4124f9d18c396a1d046e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_9
       rect:
@@ -357,14 +352,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 18, y: -6}
+        - {x: 20, y: -3}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: e24dec21d3ea4184fa222d377556d7ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_10
       rect:
@@ -377,14 +371,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 94c151155dd85bd479df2f24a6356690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_11
       rect:
@@ -397,14 +389,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 9590820096332a248b550ea77a4ba693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_12
       rect:
@@ -417,14 +407,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: df44a01948a9e954db3e97ec2b108722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_13
       rect:
@@ -437,14 +425,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: cafe34acba23f034298a495e45cadf08
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_14
       rect:
@@ -457,14 +443,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -13, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: dc68e0d5ecda8a448bd3cba064c0efbe
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_15
       rect:
@@ -477,14 +463,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -15, y: -6}
+        - {x: 16, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: fab9318d2ac58944dbf2b0a8045d08c7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_16
       rect:
@@ -497,14 +483,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: e9d58df169a81b747a24a10d921f0f09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_17
       rect:
@@ -517,14 +501,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: f20f3cf6b5d2fed4c9b22389d65616a1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_18
       rect:
@@ -537,14 +519,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: d888a7077a39ed2419b62b9d9eac8041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_19
       rect:
@@ -557,14 +537,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 68791ca603ac1684ab341ab970eb0594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_20
       rect:
@@ -577,14 +555,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -14, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: bb05ca71aac7d854d96d0ef17755a018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_21
       rect:
@@ -597,14 +575,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 20, y: -6}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 94f4b8a02074e2549b3c6a4865119034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_22
       rect:
@@ -617,14 +593,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 73fbdc01868a07043926c3e86a3664da
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_23
       rect:
@@ -637,14 +612,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: f408135b5d5c60c4fad0b10273910c3c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_24
       rect:
@@ -657,14 +631,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: f956f80d3604f2e488acd8d3ecc9bcdc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_25
       rect:
@@ -677,14 +650,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 108488744cc84bb458b89824f68a2075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_26
       rect:
@@ -697,14 +669,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -18, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 02ce0be4df390934291cfce48d45d09e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_27
       rect:
@@ -717,14 +689,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -16, y: -6}
+        - {x: 12, y: -6}
+        - {x: 17, y: -5}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: f8f72f5e0153cb74bab11f4b46dc3afc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_28
       rect:
@@ -737,14 +710,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 20, y: 6}
+        - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 16, y: -4}
+        - {x: 20, y: 0}
       tessellationDetail: 0
-      bones: []
-      spriteID: 265a86aa25b87bb4ab392aea8c2e8f0e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_29
       rect:
@@ -757,14 +730,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3f83d6a8af1f90d4d97da2ac772078f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_30
       rect:
@@ -777,14 +750,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 19, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 5a2cb8dcf5415b14283a7e90cc2013be
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_31
       rect:
@@ -797,14 +770,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 61e7172bffdd7b84980c204380742d05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_32
       rect:
@@ -817,14 +790,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -17, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 4ac64bc3b3f6f634495ef3330d532f64
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_33
       rect:
@@ -837,14 +810,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 18, y: -6}
+        - {x: 20, y: -3}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: d8a58330ec28ff7429af0d0bae0fb631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_34
       rect:
@@ -857,14 +829,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 55fb65e9a64b620449508801d6ebfe7c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_35
       rect:
@@ -877,14 +847,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 6db57ca5932a21848aabc49e3f615ff8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_36
       rect:
@@ -897,14 +865,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 30109aac73d91e34389edafa2a50ccf4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_37
       rect:
@@ -917,14 +883,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 2009ae8896386fa4aa60f2b958b32f25
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_38
       rect:
@@ -937,14 +901,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -13, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 24828e91c49b8d1498180edb0fa2be21
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_39
       rect:
@@ -957,14 +921,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -15, y: -6}
+        - {x: 16, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: a71c163714a7b9143844814760059584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_40
       rect:
@@ -977,14 +941,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 9e4582df589cbcd42911c2f0a3d28e61
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_41
       rect:
@@ -997,14 +959,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: fa8599b5781859743af788151cfa053b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_42
       rect:
@@ -1017,14 +977,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: b6032868144046f42bc54c9f772be909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_43
       rect:
@@ -1037,14 +995,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: b2e47ee0555acf247aa17cb6c846323f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_44
       rect:
@@ -1057,14 +1013,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -14, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 007151f1e909025428b6ff78d4555d93
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_45
       rect:
@@ -1077,14 +1033,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 20, y: -6}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 53b82a1092638c5409d084ba746b50e5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_46
       rect:
@@ -1097,14 +1051,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: abea9c4778036c64aa3b0722b720deaa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_47
       rect:
@@ -1117,14 +1070,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: d22eb09ed1e50f3488973a4532626432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_48
       rect:
@@ -1137,14 +1089,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: e96adb08e51dcbc4e9299464f20799a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_49
       rect:
@@ -1157,14 +1108,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 59e99411989e899498e0f12d8cbb36de
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_50
       rect:
@@ -1177,14 +1127,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -18, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 11b2f788f5a3ab845a9b4c20f075b7f0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_51
       rect:
@@ -1197,14 +1147,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -16, y: -6}
+        - {x: 12, y: -6}
+        - {x: 17, y: -5}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 5d355306621fa094bb99d0c81316d795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_52
       rect:
@@ -1217,14 +1168,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 20, y: 6}
+        - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 16, y: -4}
+        - {x: 20, y: 0}
       tessellationDetail: 0
-      bones: []
-      spriteID: 4428eb92c4ab9ef4c9f779b7d2ca2a4e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_53
       rect:
@@ -1237,14 +1188,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 6b0f8a8926c951547a9da670e69805d5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_54
       rect:
@@ -1257,14 +1208,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 19, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 9468f6bc1c5a7564da4677e33216324f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_55
       rect:
@@ -1277,14 +1228,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: cbbc77fec88f8bc49a37448b73b0dec2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_56
       rect:
@@ -1297,14 +1248,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -17, y: -6}
+        - {x: 15, y: -6}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3b198115e90ce9842a3453a03460d83e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_57
       rect:
@@ -1317,14 +1268,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 18, y: -6}
+        - {x: 20, y: -3}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 35d63ec9903e9264899612106cb9dd8d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_58
       rect:
@@ -1337,14 +1287,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: dead82bf7bb5669408ab9437071703f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_59
       rect:
@@ -1357,14 +1305,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: e62d222adce958d4bb2c11f05d272755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_60
       rect:
@@ -1377,14 +1323,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: c7b184fd465ff6248a6eed408bd4907f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_61
       rect:
@@ -1397,14 +1341,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 5c77284f4e90cd943a257f456eb2795f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_62
       rect:
@@ -1417,14 +1359,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -13, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 16f7de181af5dd84aba055768c91d613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_63
       rect:
@@ -1437,14 +1379,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -5}
+        - {x: -15, y: -6}
+        - {x: 16, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3ea973f92431f0e499207f79cf17bea4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_64
       rect:
@@ -1457,14 +1399,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: c1f5c2544886cf447a2bead3990fecdb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_65
       rect:
@@ -1477,14 +1417,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 4764b25ac59946f4f8ab7dd62cdf6116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_66
       rect:
@@ -1497,14 +1435,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 779f279abed0da7438a0efd3396496a7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_67
       rect:
@@ -1517,14 +1453,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 474d337715d76a54ebe43281ad5916d7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_68
       rect:
@@ -1537,14 +1471,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -14, y: -6}
+        - {x: 14, y: -6}
+        - {x: 20, y: -5}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 6bf88658c0a5c8842bc433909adc4990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_69
       rect:
@@ -1557,14 +1491,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -6}
+        - {x: 20, y: -6}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3d9ec5ee52a098f4f99672ba1192b74b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_70
       rect:
@@ -1577,14 +1509,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 2cb29cc3a8fc6884cb8c4432a177e973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_71
       rect:
@@ -1597,14 +1528,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 8b15278f6a1b6734180d3bd960419efc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_72
       rect:
@@ -1617,14 +1547,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -1}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 4356fcddad250b44babcffa75624ac1c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_73
       rect:
@@ -1637,14 +1566,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -19, y: -4}
+        - {x: -15, y: -4}
+        - {x: -11, y: -1}
+        - {x: -11, y: 2}
+        - {x: -12, y: 6}
+      - - {x: 11, y: 6}
+        - {x: 9, y: 2}
+        - {x: 9, y: -2}
+        - {x: 14, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: bc0243028086b8e4e8c3e1e760055090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_74
       rect:
@@ -1657,14 +1594,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -2}
+        - {x: -19, y: -4}
+        - {x: 19, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 3fd70b28bc1281840bd7e00fba7b3895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_75
       rect:
@@ -1677,14 +1614,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -3}
+        - {x: -17, y: -4}
+        - {x: -13, y: -4}
+        - {x: -10, y: -2}
+        - {x: -10, y: 2}
+        - {x: -11, y: 6}
+      - - {x: 11, y: 6}
+        - {x: 10, y: 1}
+        - {x: 10, y: -1}
+        - {x: 15, y: -4}
+        - {x: 18, y: -4}
+        - {x: 20, y: -2}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 866ac43366ddca24994805c1891ce431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_76
       rect:
@@ -1697,14 +1642,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: ca7bfaaba5b43e74daa5a8155c926271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_77
       rect:
@@ -1717,14 +1660,20 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: -14, y: -4}
+        - {x: -10, y: -1}
+        - {x: -10, y: 2}
+        - {x: -11, y: 6}
+      - - {x: 11, y: 6}
+        - {x: 10, y: 1}
+        - {x: 10, y: -1}
+        - {x: 14, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 277fa59a1190c854dbb68e3e9e11d7ed
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_78
       rect:
@@ -1737,14 +1686,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -4}
+        - {x: 20, y: -4}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 4611f5452e6e8cd438f4767137dc4fa2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Mappy_BG_trampoline_79
       rect:
@@ -1757,22 +1704,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -20, y: 6}
+        - {x: -20, y: -1}
+        - {x: -17, y: -4}
+        - {x: -14, y: -4}
+        - {x: -9, y: -1}
+        - {x: -9, y: 2}
+        - {x: -10, y: 6}
+      - - {x: 12, y: 6}
+        - {x: 11, y: 1}
+        - {x: 11, y: -1}
+        - {x: 15, y: -4}
+        - {x: 19, y: -4}
+        - {x: 20, y: -3}
+        - {x: 20, y: 6}
       tessellationDetail: 0
-      bones: []
-      spriteID: 53df387a8a4329f418e81bc0238c003a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 0d63ab69114ec234cb02e558133ff2e7
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

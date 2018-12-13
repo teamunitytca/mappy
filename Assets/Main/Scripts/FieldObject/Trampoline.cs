@@ -3,6 +3,7 @@
 public class Trampoline : MonoBehaviour {
 	const int TRAMPOLINE_MAXHP = 4;
 	int _trampoline_HP = TRAMPOLINE_MAXHP;
+
 	bool _ontop;
 	GameObject _bouncer;
 	Collider2D [ ] _col;
@@ -19,6 +20,7 @@ public class Trampoline : MonoBehaviour {
 	// Update is called once per frame
 	void Update ( ) {
 		if ( _trampoline_HP <= 0 ) {
+			changeColor( );
 			_col [ 1 ].isTrigger = true;
 			return;
 		}
@@ -27,10 +29,12 @@ public class Trampoline : MonoBehaviour {
 
 	}
 
+	void changeColor( ) {
+		_trampoline_anim.SetInteger( "HP", _trampoline_HP );
+	}
+
 	void OnCollisionEnter2D ( Collision2D collision ) {
-		if ( collision.gameObject.tag == "Player" ) {
-			_trampoline_HP--;
-		}
+		
 	}
 
 	void OnCollisionStay2D ( Collision2D collision ) {
@@ -47,6 +51,9 @@ public class Trampoline : MonoBehaviour {
 	void OnTriggerExit2D ( Collider2D collision ) {
 		_ontop = false;
 		_trampoline_anim.SetBool( "OnBound", false );
+		if ( collision.gameObject.tag == "Player" ) {
+			_trampoline_HP--;
+		}
 	}
 
 	void jump ( ) {
