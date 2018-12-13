@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
 public class Entity : MonoBehaviour
 {
     protected enum MOVING
@@ -18,6 +17,8 @@ public class Entity : MonoBehaviour
     protected float _movementSpeed = 0.01f;
     [SerializeField]
     protected MOVING _state = MOVING.IDLE;
+    [SerializeField]
+    protected bool _isOnGrond = false;
 
     // Interal data
     protected Animator _animator;
@@ -37,14 +38,21 @@ public class Entity : MonoBehaviour
 
     protected void SetRandomDir()
     {
-        switch (UnityEngine.Random.Range(0, 3))
+        if (_isOnGrond)
         {
-            case 1:
-                _state = MOVING.LEFT;
-                break;
-            case 2:
-                _state = MOVING.RIGTH;
-                break;
+            switch (UnityEngine.Random.Range(0, 3))
+            {
+                case 1:
+                    _state = MOVING.LEFT;
+                    break;
+                case 2:
+                    _state = MOVING.RIGTH;
+                    break;
+            }
+        }
+        else
+        {
+            _state = MOVING.IDLE;
         }
     }
 
