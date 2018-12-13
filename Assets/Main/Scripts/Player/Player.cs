@@ -55,9 +55,7 @@ public class Player : Entity
 		_movable = true;
 	}
 
-	void OnCollisionExit2D( Collision2D collision ) {
-		if ( collision.gameObject.tag == "Floor" ) {
-			jump( );
-		}
+	void OnCollisionExit2D(Collision2D collision) {
+        Jump(collision);
 	}
 }

@@ -12,6 +12,8 @@ TagManager:
   - Safe
   - Floor
   - Wall
+  - FloorArea
+  - Door
   layers:
   - Default
   - TransparentFX

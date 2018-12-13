@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : Interactable
 {
     [SerializeField]
     private bool _isFacingLeft = false;
@@ -12,11 +12,16 @@ public class Door : MonoBehaviour
     [SerializeField]
     private GameObject _SubController = null;
 
+    [SerializeField]
+    private GameObject _microWave = null;
+
     private bool _opened = false;
 
 	// Use this for initialization
 	void Awake ()
     {
+        //this.gameObject.GetComponent<Animator>().SetBool("opened", _opened);
+
         if (_isFacingLeft)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
@@ -31,8 +36,16 @@ public class Door : MonoBehaviour
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public void OpenDoor()
+    {
+        _opened = true;
+        gameObject.SetActive(false);
+        Instantiate(_microWave, transform.position, Quaternion.identity, null);
+        //this.gameObject.GetComponent<Animator>().SetBool("opened", _opened);
+    }
+
+    public override void Use()
+    {
+        OpenDoor();
+    }
 }
