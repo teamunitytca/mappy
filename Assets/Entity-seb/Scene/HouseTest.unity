@@ -183,7 +183,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4336646507222780, guid: 4f509f2f3170fbb46b023e5520b05010, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.6340113
+      value: -1.197
       objectReference: {fileID: 0}
     - target: {fileID: 4336646507222780, guid: 4f509f2f3170fbb46b023e5520b05010, type: 2}
       propertyPath: m_LocalPosition.y
@@ -218,9 +218,30 @@ Prefab:
       propertyPath: _startPos
       value: 
       objectReference: {fileID: 1301659223}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 61495092416855288, guid: 4f509f2f3170fbb46b023e5520b05010, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4f509f2f3170fbb46b023e5520b05010, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &835870414 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1707755576342338, guid: 4f509f2f3170fbb46b023e5520b05010,
+    type: 2}
+  m_PrefabInternal: {fileID: 755804540}
+--- !u!58 &835870419
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835870414}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02, y: -0.02}
+  serializedVersion: 2
+  m_Radius: 0.02
 --- !u!1001 &1173941328
 Prefab:
   m_ObjectHideFlags: 0
@@ -363,7 +384,7 @@ Prefab:
     - target: {fileID: 114566073550779254, guid: c50ec535832559a49a91396c45e4f4ff,
         type: 2}
       propertyPath: _isFacingLeft
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1300494281911630, guid: c50ec535832559a49a91396c45e4f4ff, type: 2}
       propertyPath: m_TagString
@@ -375,7 +396,13 @@ Prefab:
       value: 
       objectReference: {fileID: 1000376553800164, guid: 17b2cc3c4b211a14da7fc72a392eb9bb,
         type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 61271296688810658, guid: c50ec535832559a49a91396c45e4f4ff,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 50807674200292762, guid: c50ec535832559a49a91396c45e4f4ff, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c50ec535832559a49a91396c45e4f4ff, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1301659223

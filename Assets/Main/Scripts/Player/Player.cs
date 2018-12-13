@@ -14,19 +14,14 @@ public class Player : Entity
 
     private void Update()
     {
-        _move_input = Input.GetAxisRaw("Horizontal");
-
-        if (_move_input < 0 && _movable)
+        if (Input.GetButton("Horizontal") && _movable)
         {
-            _state = MOVING.LEFT;
+            if (Input.GetAxis("Horizontal") < 0)
+                _state = MOVING.LEFT;
+            else
+                _state = MOVING.RIGTH;
         }
-
-        if (_move_input > 0 && _movable)
-        {
-            _state = MOVING.RIGTH;
-        }
-
-        if (_move_input == 0 || !_movable)
+        else
         {
             _state = MOVING.IDLE;
         }

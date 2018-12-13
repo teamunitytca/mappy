@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MicroWave : MonoBehaviour
 {
-    public bool _isFacingLeft = true;
+    public bool isFacingLeft = true;
     [SerializeField]
     private bool _hitWall = false;
 
@@ -41,7 +41,10 @@ public class MicroWave : MonoBehaviour
 
     void FixedUpdate ()
     {
-		if (_isFacingLeft)
+        if (Mathf.Abs(transform.position.x) > 10)
+            Destroy(this.gameObject);
+
+		if (isFacingLeft)
         {
             this.gameObject.transform.position += new Vector3(-.01f, 0, 0);
             this.gameObject.transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);

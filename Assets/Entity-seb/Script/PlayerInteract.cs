@@ -8,19 +8,21 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _currentTarget = collision.gameObject;
+        if (collision.tag == "Door")
+            _currentTarget = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _currentTarget = collision.gameObject;
+        if (collision.gameObject == _currentTarget)
+            _currentTarget = null;
     }
 
     private void Update()
     {
-        if (_currentTarget.tag == "Door" && Input.GetButtonDown("Use"))
+        if (_currentTarget != null && _currentTarget.tag == "Door" && Input.GetButtonDown("Use"))
         {
-            _currentTarget.GetComponent<Interactable>().Use();
+            _currentTarget.GetComponent<Interactable>().Use(gameObject);
         }
     }
 }
