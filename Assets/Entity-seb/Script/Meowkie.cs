@@ -7,42 +7,12 @@ using UnityEngine;
 
 public class Meowkie : Entity
 {
-    
-    [SerializeField]
-    private bool _falled = false;
-    [SerializeField]
-    private uint _fallTime = 100;
-
-    private float _lastSpeed = 1000;
-    private uint _currentFallTime = 100;
 
     void FixedUpdate ()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
             _rigidbody.velocity = new Vector2(0, 3);
-        }
-
-        if (_falled)
-        {
-            _state = MOVING.FALLED;
-            //_rigidbody.drag = 0.001f;
-
-            if (_rigidbody.velocity.x < _lastSpeed * 10)
-            {
-                //Destroy(gameObject);
-            }
-
-            _lastSpeed = _rigidbody.velocity.x;
-
-            if (_currentFallTime == 0)
-            {
-                _falled = false;
-            }
-            else
-            {
-                _currentFallTime--;
-            }
         }
         
 
@@ -51,6 +21,8 @@ public class Meowkie : Entity
             UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
             SetRandomDir();
         }
+
+        CheckFall();
 
         switch (_state)
         {
@@ -76,7 +48,7 @@ public class Meowkie : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "FloorArea")
         {
             Physics2D.IgnoreCollision(collision.collider, _collider);
             return;
@@ -96,17 +68,5 @@ public class Meowkie : Entity
 
         _isOnGrond = true;
         SetRandomDir();
-    }
-
-    public void SetFalled(bool falled)
-    {
-        _fallTime = 100;
-        _falled = falled;
-    }
-
-    void Falled()
-    {
-        _falled = true;
-        _currentFallTime = _fallTime;
     }
 }
