@@ -48,7 +48,7 @@ public class Meowkie : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "FloorArea")
         {
             Physics2D.IgnoreCollision(collision.collider, _collider);
             return;
