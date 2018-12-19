@@ -33,8 +33,6 @@ public class Entity : MonoBehaviour
     private uint _fallTime = 100;
 
     [SerializeField]
-    protected float _move_input = 0;
-    [SerializeField]
     protected bool _movable = true;
 
     private uint _currentFallTime = 100;
@@ -124,16 +122,24 @@ public class Entity : MonoBehaviour
         }
     }
 
+    protected void Jump(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Floor")
+        {
+            jump();
+        }
+    }
+
     protected void jump()
     {
         _movable = false;
-        if (_move_input < 0)
+        if (_state == MOVING.LEFT)
         {
-            _rigidbody.velocity = new Vector2(-10, 250) * Time.deltaTime;
+            _rigidbody.velocity = new Vector2(-10, 25) * Time.deltaTime;
         }
-        if (_move_input > 0)
+        if (_state == MOVING.RIGTH)
         {
-            _rigidbody.velocity = new Vector2(10, 250) * Time.deltaTime;
+            _rigidbody.velocity = new Vector2(10, 25) * Time.deltaTime;
         }
     }
 

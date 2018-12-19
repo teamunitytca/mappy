@@ -69,4 +69,9 @@ public class Meowkie : Entity
         _isOnGrond = true;
         SetRandomDir();
     }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        Jump(collision);
+    }
 }

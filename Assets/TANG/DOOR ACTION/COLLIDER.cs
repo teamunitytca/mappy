@@ -5,11 +5,13 @@ using UnityEngine;
 public class COLLIDER : MonoBehaviour {
 	private Animator door = null;
 	void Start () {
-		door = GetComponent<Animator> ();
+		door = gameObject.GetComponent<Animator> ();
+		//door.SetBool("close",true);
 	}
 	private void OnCollisionEnter2D(Collision2D col)
-	{if (col.gameObject.name == "Mappy_OBJ_enemy_0") {
-			door.SetBool ("event", false);
-		}
+	{if (col.gameObject.tag == "Enemy") {
+			door.SetBool("close",false);
+	}
+	
 	}
 }
