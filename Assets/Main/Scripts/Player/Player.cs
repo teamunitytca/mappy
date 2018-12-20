@@ -31,11 +31,18 @@ public class Player : Entity
     {
         Move();
 
-        if (transform.position.y < -3)
-        {
-            _life.loseLife();
-            transform.position = _startPos.transform.position;
-        }
+        //if ( transform.position.y <= -3 )
+        //{
+        //    _life.loseLife();
+        //    transform.position = _startPos.transform.position;
+		//	_rigidbody.velocity = Vector2.zero;
+        //}
+	}
+
+	void OnBecameInvisible( ) {
+		_life.loseLife( );
+		transform.position = _startPos.transform.position;
+		_rigidbody.velocity = Vector2.zero;
 	}
 
 	void resetPos( ) {
