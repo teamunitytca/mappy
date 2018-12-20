@@ -38,7 +38,7 @@ public class Trampoline : MonoBehaviour {
 
 	void OnCollisionStay2D ( Collision2D collision )
     {
-		if ( _ontop && collision.gameObject.tag == "Player"  || _ontop && collision.gameObject.tag  == "Enemy")
+		if ( _ontop && ( collision.gameObject.tag == "Player"  || collision.gameObject.tag  == "Enemy" ) )
         {
 			_trampoline_anim.SetBool( "OnBound", true );
             collision.gameObject.GetComponent<Entity>().SetState(Entity.MOVING.JUMP);

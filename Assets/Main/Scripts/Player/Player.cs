@@ -21,7 +21,7 @@ public class Player : Entity
             else
                 _state = MOVING.RIGTH;
         }
-        else
+        else if (_state != MOVING.JUMP)
         {
             _state = MOVING.IDLE;
         }
