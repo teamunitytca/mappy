@@ -21,7 +21,7 @@ public class Player : Entity
             else
                 _state = MOVING.RIGTH;
         }
-        else
+        else if (_state != MOVING.JUMP)
         {
             _state = MOVING.IDLE;
         }
@@ -31,26 +31,35 @@ public class Player : Entity
     {
         Move();
 
-        if (transform.position.y < -3)
-        {
-            _life.loseLife();
-            transform.position = _startPos.transform.position;
-        }
+        //if ( transform.position.y <= -3 )
+        //{
+        //    _life.loseLife();
+        //    transform.position = _startPos.transform.position;
+		//	_rigidbody.velocity = Vector2.zero;
+        //}
+	}
+
+	void OnBecameInvisible( ) {
+		_life.loseLife( );
+		transform.position = _startPos.transform.position;
+		_rigidbody.velocity = Vector2.zero;
 	}
 
 	void resetPos( ) {
 		transform.position = _startPos.transform.position;
 	}
 
-	void OnCollisionEnter2D( Collision2D collision ) {
-		if ( collision.gameObject.tag == "Enemy" ) {
+	void OnCollisionEnter2D( Collision2D collision )
+    {
+		if (collision.gameObject.tag == "Enemy")
+        {
 			_life.loseLife( );
 			resetPos( );
 		}
 		_movable = true;
 	}
 
-	void OnCollisionExit2D(Collision2D collision) {
-        Jump(collision);
+	void OnCollisionExit2D(Collision2D collision)
+    {
 	}
 }

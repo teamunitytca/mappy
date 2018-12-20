@@ -8,6 +8,7 @@ public class CamraTracker : MonoBehaviour
     private float _posZ;
     private Camera cam;
 
+
     private void Awake()
     {
         cam = Camera.main;

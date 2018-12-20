@@ -5,20 +5,30 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    protected enum MOVING
+    public enum MOVING
     {
         LEFT,
         RIGTH,
         IDLE,
-        FALLED
+        FALLED,
+        JUMP
     }
 
     [SerializeField]
     protected float _movementSpeed = 0.01f;
     [SerializeField]
+    protected float _jumpSpeed = 0.01f;
+    [SerializeField]
     protected MOVING _state = MOVING.IDLE;
     [SerializeField]
     protected bool _isOnGrond = false;
+
+    [SerializeField]
+    protected bool _falled = false;
+    [SerializeField]
+    private uint _fallTime = 100;
+    [SerializeField]
+    protected bool _movable = true;
 
     // Interal data
     protected Animator _animator;
@@ -26,14 +36,6 @@ public class Entity : MonoBehaviour
     protected Collider2D _collider;
 
     GameObject _player;
-
-    [SerializeField]
-    protected bool _falled = false;
-    [SerializeField]
-    private uint _fallTime = 100;
-
-    [SerializeField]
-    protected bool _movable = true;
 
     private uint _currentFallTime = 100;
     private float _lastSpeed = 1000;
@@ -45,6 +47,11 @@ public class Entity : MonoBehaviour
         _collider = gameObject.GetComponent<Collider2D>();
 
         _player = GameObject.FindWithTag("Player");
+    }
+
+    public void SetState(MOVING stateIn)
+    {
+        _state = stateIn;
     }
     
     protected void CheckFall()
@@ -119,28 +126,16 @@ public class Entity : MonoBehaviour
                 break;
             case MOVING.FALLED:
                 break;
+            case MOVING.JUMP:
+                Jump();
+                break;
         }
     }
 
-    protected void Jump(Collision2D collision)
+    public virtual void Jump()
     {
-        if (collision.gameObject.tag == "Floor")
-        {
-            jump();
-        }
-    }
-
-    protected void jump()
-    {
-        _movable = false;
-        if (_state == MOVING.LEFT)
-        {
-            _rigidbody.velocity = new Vector2(-10, 25) * Time.deltaTime;
-        }
-        if (_state == MOVING.RIGTH)
-        {
-            _rigidbody.velocity = new Vector2(10, 25) * Time.deltaTime;
-        }
+        _rigidbody.Sleep();
+        transform.position = new Vector3(transform.position.x, transform.position.y + .02f, 0);
     }
 
     public void SetFalled(bool falled)
@@ -148,7 +143,7 @@ public class Entity : MonoBehaviour
         _falled = falled;
     }
 
-    void Falled()
+    public void Falled()
     {
         _falled = true;
         _currentFallTime = _fallTime;

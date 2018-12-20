@@ -5,52 +5,43 @@ public class Trampoline : MonoBehaviour {
 	int _trampoline_HP = TRAMPOLINE_MAXHP;
 
 	bool _ontop;
-	GameObject _bouncer;
 	Collider2D [ ] _col;
 	Animator _trampoline_anim;
 	[SerializeField] Vector2 _velocity = Vector2.zero;
 
-	[SerializeField] int test_hp;
-	[SerializeField] int test_no;
-	[SerializeField] bool test_bound;
-
 	// Use this for initialization
 	void Start ( ) {
 		_ontop = false;
-		_col = GetComponents<Collider2D>( );
-		_trampoline_anim = GetComponent<Animator>( );
+		_col = GetComponents<Collider2D>();
+		_trampoline_anim = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void Update ( ) {
-		if ( _trampoline_HP <= 0 ) {
+		if ( _trampoline_HP <= 0 )
+        {
 			changeColor( );
 			_col [ 1 ].isTrigger = true;
 			return;
 		}
 
 		_col [ 1 ].isTrigger = false;
-		testAnim( );
-	}
-
-	void testAnim( ) {
-		_trampoline_anim.SetInteger( "HP", test_hp );
-		_trampoline_anim.SetInteger( "NO", test_no );
-		_trampoline_anim.SetBool( "OnBound", test_bound );
 	}
 
 	void changeColor( ) {
-		//_trampoline_anim.SetInteger( "HP", _trampoline_HP );
+		_trampoline_anim.SetInteger( "HP", _trampoline_HP );
 	}
 
 	void OnCollisionEnter2D ( Collision2D collision ) {
 		
 	}
 
-	void OnCollisionStay2D ( Collision2D collision ) {
-		if ( _ontop && collision.gameObject.tag == "Player" ) {
+	void OnCollisionStay2D ( Collision2D collision )
+    {
+		if ( _ontop && ( collision.gameObject.tag == "Player"  || collision.gameObject.tag  == "Enemy" ) )
+        {
 			_trampoline_anim.SetBool( "OnBound", true );
-			_bouncer = collision.gameObject;
+            collision.gameObject.GetComponent<Entity>().SetState(Entity.MOVING.JUMP);
 		}
 	}
 
@@ -58,19 +49,18 @@ public class Trampoline : MonoBehaviour {
 		_ontop = true;
 	}
 
-	void OnTriggerExit2D ( Collider2D collision ) {
+	void OnTriggerExit2D ( Collider2D collision )
+    {
 		_ontop = false;
 		_trampoline_anim.SetBool( "OnBound", false );
+
 		if ( collision.gameObject.tag == "Player" ) {
 			_trampoline_HP--;
 		}
 	}
 
-	void jump ( ) {
-		_bouncer.GetComponent<Rigidbody2D>( ).velocity = _velocity * Time.deltaTime;
-	}
-
-	public void resetTrampolineHP ( ) {
+	public void resetTrampolineHP ( )
+    {
 		_trampoline_HP = TRAMPOLINE_MAXHP;
 	}
 }
