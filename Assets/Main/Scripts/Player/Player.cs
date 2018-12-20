@@ -42,15 +42,17 @@ public class Player : Entity
 		transform.position = _startPos.transform.position;
 	}
 
-	void OnCollisionEnter2D( Collision2D collision ) {
-		if ( collision.gameObject.tag == "Enemy" ) {
+	void OnCollisionEnter2D( Collision2D collision )
+    {
+		if (collision.gameObject.tag == "Enemy")
+        {
 			_life.loseLife( );
 			resetPos( );
 		}
 		_movable = true;
 	}
 
-	void OnCollisionExit2D(Collision2D collision) {
-        Jump(collision);
+	void OnCollisionExit2D(Collision2D collision)
+    {
 	}
 }
