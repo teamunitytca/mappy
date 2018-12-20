@@ -23,27 +23,22 @@ public class Meowkie : Entity
         }
 
         CheckFall();
-
-        switch (_state)
-        {
-            case MOVING.LEFT:
-                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                _rigidbody.AddForce(new Vector2(-_movementSpeed * 100, 0));
-                break;
-            case MOVING.RIGTH:
-                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                _rigidbody.AddForce(new Vector2(_movementSpeed * 100, 0));
-                break;
-            case MOVING.IDLE:
-                _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
-                break;
-            case MOVING.FALLED:
-                break;
-        }
+        Move();
 
         _animator.SetBool("Falled", _falled);
         _animator.SetFloat("Speed", Mathf.Abs(_rigidbody.velocity.x * 100));
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        int rng = UnityEngine.Random.Range(0, 3);
+
+        if (collision.tag == "FloorJumpColider")
+        {
+            if (rng == 0)
+                SetRandomDir();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -72,6 +67,5 @@ public class Meowkie : Entity
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        Jump(collision);
     }
 }
