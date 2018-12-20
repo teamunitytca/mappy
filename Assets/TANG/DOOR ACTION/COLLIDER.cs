@@ -8,10 +8,9 @@ public class COLLIDER : MonoBehaviour {
 		door = gameObject.GetComponent<Animator> ();
 		//door.SetBool("close",true);
 	}
-	private void OnCollisionEnter2D(Collision2D col)
-	{if (col.gameObject.tag == "Enemy") {
+	private void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Enemy") {
 			door.SetBool("close",false);
-	}
-	
+	 	}
 	}
 }

@@ -29,36 +29,41 @@ public class ACTION : MonoBehaviour {
 			if (countdown <= 0) {
 				velocity = speed;
 				R = 0;
-				R = Random.Range (1, 9);
+				R = Random.Range (3, 9);
 				countdown = 3;
-			}
-		}
-
+			}	
+	   }
 		if (transform.position.x >= 9 - R) {
 			countdown -= Time.deltaTime;
 			velocity = 0;
 			if (countdown <= 0) {
 				velocity = -speed;
 				R = 0;
-				R = Random.Range (-9, -1);
+				R = Random.Range (-10, -4);
 				countdown = 3;
 			}
 		}
-
 		transform.position += new Vector3 (velocity, 0, 0);
 
 	}
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Door") {
-		_animator.SetBool ("WALK", false);
-			_animator.SetTrigger ( "doortest" );
-			this.transform.position =
+			if (velocity > 0) {
+				_animator.SetBool ("WALK", false);
+				_animator.SetTrigger ("doortest");
+				this.transform.position =
 				new Vector3 (
-				transform.position.x - 5,
-				transform.position.y,
-				transform.position.z);
-			_counter = true;
+					transform.position.x - 2.5f,
+					transform.position.y,
+					transform.position.z);
+				transform.rotation = Quaternion.Euler (0, 0, 90);
+				_counter = true;
+			} 
+			if (velocity < 0) {
+				_counter = false;
+			}
 		}
+
 	}
 	void Update () {
 		if (_counter == false) {
@@ -69,8 +74,9 @@ public class ACTION : MonoBehaviour {
 			velocity = 0;
 			countdown -= Time.deltaTime;
 			if (countdown <= 0) {
+				transform.rotation = Quaternion.Euler (0, 0, 0);
 				countdown = 3;
-				velocity = 1;
+				velocity = speed;
 				_counter = false;
 			}
 
