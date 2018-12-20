@@ -16,10 +16,11 @@ public class Player : Entity
     {
         if (Input.GetButton("Horizontal") && _movable)
         {
-            if (Input.GetAxis("Horizontal") < 0)
-                _state = MOVING.LEFT;
-            else
-                _state = MOVING.RIGTH;
+			if ( Input.GetAxis( "Horizontal" ) < 0 ) {
+				_state = MOVING.LEFT;
+			} else {
+				_state = MOVING.RIGTH;
+			}
         }
         else if (_state != MOVING.JUMP)
         {
@@ -30,23 +31,18 @@ public class Player : Entity
     void FixedUpdate( )
     {
         Move();
-
-        //if ( transform.position.y <= -3 )
-        //{
-        //    _life.loseLife();
-        //    transform.position = _startPos.transform.position;
-		//	_rigidbody.velocity = Vector2.zero;
-        //}
 	}
 
 	void OnBecameInvisible( ) {
 		_life.loseLife( );
-		transform.position = _startPos.transform.position;
+		resetPos( );
 		_rigidbody.velocity = Vector2.zero;
 	}
 
 	void resetPos( ) {
-		transform.position = _startPos.transform.position;
+		if ( _startPos != null ) {
+			transform.position = _startPos.transform.position;
+		}
 	}
 
 	void OnCollisionEnter2D( Collision2D collision )
@@ -61,5 +57,6 @@ public class Player : Entity
 
 	void OnCollisionExit2D(Collision2D collision)
     {
+		//to do, somthing importent
 	}
 }
