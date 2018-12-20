@@ -29,7 +29,7 @@ private Animator animator = null;
 
 		animator.SetTrigger ( "Jump" );
 		Rigidbody2D hit_obj = collision.gameObject.GetComponent< Rigidbody2D >( );
-		hit_obj.velocity = new Vector2 ( 0, 10 );
+		hit_obj.velocity = new Vector2 ( 0, 200 ) * Time.deltaTime;
 
 		if ( collision.gameObject.tag == "Player" ) {
 			Debug.Log ( "まっぴー" );
