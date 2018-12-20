@@ -143,7 +143,7 @@ public class Entity : MonoBehaviour
         _falled = falled;
     }
 
-    void Falled()
+    public void Falled()
     {
         _falled = true;
         _currentFallTime = _fallTime;
