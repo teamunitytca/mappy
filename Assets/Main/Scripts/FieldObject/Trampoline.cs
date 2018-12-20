@@ -10,10 +10,6 @@ public class Trampoline : MonoBehaviour {
 	Animator _trampoline_anim;
 	[SerializeField] Vector2 _velocity = Vector2.zero;
 
-	[SerializeField] int test_hp;
-	[SerializeField] int test_no;
-	[SerializeField] bool test_bound;
-
 	// Use this for initialization
 	void Start ( ) {
 		_ontop = false;
@@ -30,17 +26,10 @@ public class Trampoline : MonoBehaviour {
 		}
 
 		_col [ 1 ].isTrigger = false;
-		testAnim( );
-	}
-
-	void testAnim( ) {
-		_trampoline_anim.SetInteger( "HP", test_hp );
-		_trampoline_anim.SetInteger( "NO", test_no );
-		_trampoline_anim.SetBool( "OnBound", test_bound );
 	}
 
 	void changeColor( ) {
-		//_trampoline_anim.SetInteger( "HP", _trampoline_HP );
+		_trampoline_anim.SetInteger( "HP", _trampoline_HP );
 	}
 
 	void OnCollisionEnter2D ( Collision2D collision ) {
