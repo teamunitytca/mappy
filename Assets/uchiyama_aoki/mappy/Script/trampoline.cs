@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class trampoline : MonoBehaviour {
 	protected enum HP {
-		green = 0,
-		blue = 1,
-		yellow = 2,
-		red = 3
+		green = 3,
+		blue = 2,
+		yellow = 1,
+		red = 0
 	}
 
 private Animator animator = null;
@@ -18,6 +18,7 @@ private Animator animator = null;
 	// Use this for initialization
 	void Start ( ) {
 		animator = GetComponent< Animator >( );
+		animator.SetInteger ("HP", (int)HP.green);
 	}
 	
 	// Update is called once per frame
@@ -25,9 +26,8 @@ private Animator animator = null;
 
 	}
 	void OnCollisionEnter2D( Collision2D collision ){
-		
+
 		animator.SetTrigger ( "Jump" );
-		animator.SetInteger ("HP", (int)HP.green);
 		Rigidbody2D hit_obj = collision.gameObject.GetComponent< Rigidbody2D >( );
 		hit_obj.velocity = new Vector2 ( 0, 10 );
 
@@ -42,7 +42,13 @@ private Animator animator = null;
 			animator.SetInteger ("HP", (int)HP.yellow);
 		}else if (count == 3) {
 			animator.SetInteger ("HP", (int)HP.red);
-			GetComponent< BoxCollider2D >( ).enabled = false;
+			GetComponent< BoxCollider2D >( ).isTrigger = true;
 		}
-	}	
+
+	}
+	void OnTriggerEnter2D(Collider2D collision) {
+		animator.SetBool ( "Dead", true );
+		Debug.Log("hit");
+	}
+		
 }
