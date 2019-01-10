@@ -15,6 +15,8 @@ TagManager:
   - FloorArea
   - Door
   - FloorJumpColider
+  - trampoline
+  - dorapo
   layers:
   - Default
   - TransparentFX

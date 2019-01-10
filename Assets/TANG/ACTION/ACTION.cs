@@ -12,7 +12,7 @@ public class ACTION : MonoBehaviour {
 	float velocity = 0;
 	void Start () {
 		_animator = GetComponent<Animator> ();
-		velocity = speed;
+		velocity = 0;
 		R = 0;
 	}
 
@@ -44,7 +44,7 @@ public class ACTION : MonoBehaviour {
 			}
 		}
 
-		transform.position += new Vector3 (velocity, 0, 0);
+		transform.position += new Vector3 (velocity/10, 0, 0);
 
 	}
 	void OnCollisionEnter2D(Collision2D col){
@@ -64,8 +64,19 @@ public class ACTION : MonoBehaviour {
 				_counter = false;
 			}
 		}
-
+		if (col.gameObject.tag == "Floor") {
+			if (this.transform.rotation.z <= 1&&this.transform.rotation.z >= -1) {
+				velocity = speed;
+				_counter = false;
+			}
+		}
 	}
+	void OnCollisionEvit2D(Collision col){
+	
+	}
+
+
+
 	void Update () {
 		if (_counter == false) {
 			_animator.SetBool ("door", false);
@@ -84,5 +95,5 @@ public class ACTION : MonoBehaviour {
 		}
 	
 	}
-
+	
 }
