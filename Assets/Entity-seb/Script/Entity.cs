@@ -3,24 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Entity : MonoBehaviour
-{
+public class Entity : MonoBehaviour {
     public enum MOVING
     {
         LEFT,
         RIGTH,
         IDLE,
         FALLED,
-        JUMP
+        JUMP,
     }
 
-    [SerializeField]
+	public enum ANIM_STATE {
+		IDLE,
+		MOVE,
+		JUMP,
+		DIED,
+		HIT_DOOR
+	}
+
+	[SerializeField]
     protected float _movementSpeed = 0.01f;
     [SerializeField]
     protected float _jumpSpeed = 0.01f;
     [SerializeField]
     protected MOVING _state = MOVING.IDLE;
     [SerializeField]
+	protected ANIM_STATE _anim_state;
+	[SerializeField]
     protected bool _isOnGrond = false;
 
     [SerializeField]
@@ -116,19 +125,23 @@ public class Entity : MonoBehaviour
             case MOVING.LEFT:
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
                 _rigidbody.AddForce(new Vector2(-_movementSpeed * 100, 0));
-                break;
+				_anim_state = ANIM_STATE.MOVE;
+				break;
             case MOVING.RIGTH:
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
                 _rigidbody.AddForce(new Vector2(_movementSpeed * 100, 0));
+				_anim_state = ANIM_STATE.MOVE;
                 break;
-            case MOVING.IDLE:
+			case MOVING.IDLE:
                 _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
+				_anim_state = ANIM_STATE.IDLE;
                 break;
-            case MOVING.FALLED:
+			case MOVING.FALLED:
                 break;
             case MOVING.JUMP:
                 Jump();
-                break;
+				_anim_state = ANIM_STATE.JUMP;
+				break;
         }
     }
 

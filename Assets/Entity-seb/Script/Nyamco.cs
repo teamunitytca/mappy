@@ -1,18 +1,16 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Meowkie : Entity
+public class Nyamco : Entity
 {
-
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
             _rigidbody.velocity = new Vector2(0, 3);
         }
-        
+
 
         if (Mathf.Abs(_rigidbody.velocity.x) < 0.00001f && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
         {
@@ -63,7 +61,4 @@ public class Meowkie : Entity
         SetRandomDir();
     }
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
-    }
 }

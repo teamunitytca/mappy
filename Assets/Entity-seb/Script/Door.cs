@@ -48,9 +48,7 @@ public class Door : Interactable
 	
 	public void OpenDoor()
     {
-        _opened = true;
-
-        if (_isSpecialDoor)
+        if (_isSpecialDoor && !_opened)
         {
             GameObject micro = Instantiate(_microWave, transform.position, Quaternion.identity, null) as GameObject;
 
@@ -63,6 +61,7 @@ public class Door : Interactable
         if (!_isSpecialDoor)
             _triggerFall = true;
 
+        _opened = true;
         this.gameObject.GetComponent<Animator>().SetBool("Opened", _opened);
     }
 
@@ -89,9 +88,9 @@ public class Door : Interactable
 
     public override void Use(GameObject entity)
     {
-       /* if (_isFacingLeft && entity.transform.position.x > this.transform.position.x)
+       if (_isFacingLeft && entity.transform.position.x > this.transform.position.x)
             OpenDoor();
-        else if (!_isFacingLeft && entity.transform.position.x < this.transform.position.x)*/
+        else if (!_isFacingLeft && entity.transform.position.x < this.transform.position.x)
             OpenDoor();
     }
 }

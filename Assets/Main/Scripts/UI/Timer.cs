@@ -6,12 +6,12 @@ public class Timer : MonoBehaviour {
 	[SerializeField] Text _text = null;
 
 	// Use this for initialization
-	void Start ( ) {
+	void Start( ) {
 
 	}
 
 	// Update is called once per frame
-	void Update ( ) {
+	void Update( ) {
 
 		_time_limit -= Time.deltaTime;
 		_text.text = "TIME" + "\n" + ( ( int )_time_limit ).ToString( );
@@ -21,7 +21,11 @@ public class Timer : MonoBehaviour {
 		}
 	}
 
-	public void addTime ( float time ) {
+	public void addTime( float time ) {
 		_time_limit += time;
+	}
+
+	public float getTime( ) {
+		return _time_limit;
 	}
 }
