@@ -146,12 +146,13 @@ MonoBehaviour:
   _movementSpeed: 0.1
   _jumpSpeed: 0.01
   _state: 2
+  _anim_state: 0
   _isOnGrond: 0
   _falled: 0
   _fallTime: 100
   _movable: 1
   _startPos: {fileID: 0}
-  _anim: {fileID: 0}
+  _anim: {fileID: 95318315041749564}
 --- !u!212 &212180919499490640
 SpriteRenderer:
   m_ObjectHideFlags: 1

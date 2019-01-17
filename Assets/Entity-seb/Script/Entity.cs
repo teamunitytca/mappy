@@ -27,6 +27,7 @@ public class Entity : MonoBehaviour {
     protected float _jumpSpeed = 0.01f;
     [SerializeField]
     protected MOVING _state = MOVING.IDLE;
+    [SerializeField]
 	protected ANIM_STATE _anim_state;
 	[SerializeField]
     protected bool _isOnGrond = false;
