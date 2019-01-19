@@ -11,6 +11,7 @@ public class ItemScore : Item {
 
 	NowScore _score;
 
+
 	// Use this for initialization
 	void Start ( ) {
 		_score = GameObject.Find( "NowScoreText" ).GetComponent<NowScore>( );

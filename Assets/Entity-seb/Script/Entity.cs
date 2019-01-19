@@ -124,12 +124,12 @@ public class Entity : MonoBehaviour {
         {
             case MOVING.LEFT:
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                _rigidbody.AddForce(new Vector2(-_movementSpeed * 100, 0));
+				transform.position += new Vector3( -_movementSpeed, 0, 0 );
 				_anim_state = ANIM_STATE.MOVE;
 				break;
             case MOVING.RIGTH:
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                _rigidbody.AddForce(new Vector2(_movementSpeed * 100, 0));
+				transform.position += new Vector3( _movementSpeed, 0, 0 );
 				_anim_state = ANIM_STATE.MOVE;
                 break;
 			case MOVING.IDLE:

@@ -17,6 +17,7 @@ TagManager:
   - FloorJumpColider
   - trampoline
   - dorapo
+  - Healer
   layers:
   - Default
   - TransparentFX

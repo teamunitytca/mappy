@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 public class NowScore : MonoBehaviour {
-	int _now_score = 0;
+	public static int _now_score = 0;
 	[SerializeField] Text _text = null;
 
 	// Use this for initialization

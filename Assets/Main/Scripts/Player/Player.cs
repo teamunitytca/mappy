@@ -29,7 +29,7 @@ public class Player : Entity {
 
 	void updateState( ) {
 		if ( Input.GetButton( "Horizontal" ) && _movable ) {
-			if( Input.GetAxis( "Horizontal" ) < 0 ) {
+			if ( Input.GetAxis( "Horizontal" ) < 0 ) {
 				_state = MOVING.LEFT;
 			} else {
 				_state = MOVING.RIGTH;
@@ -40,35 +40,23 @@ public class Player : Entity {
 	}
 
 	void updateAnimState( ) {
+		_anim.SetBool( "HitDoor", false );
+		_anim.SetBool( "Move", false );
+		_anim.SetBool( "Jump", false );
+		_anim.SetBool( "Died", false );
 		switch ( _anim_state ) {
 			case ANIM_STATE.IDLE:
-				_anim.SetBool( "HitDoor", false );
-				_anim.SetBool( "Move", false );
-				_anim.SetBool( "Jump", false );
-				_anim.SetBool( "Died", false );
 				break;
 			case ANIM_STATE.MOVE:
-				_anim.SetBool( "HitDoor", false );
 				_anim.SetBool( "Move", true );
-				_anim.SetBool( "Jump", false );
-				_anim.SetBool( "Died", false );
 				break;
 			case ANIM_STATE.JUMP:
-				_anim.SetBool( "HitDoor", false );
-				_anim.SetBool( "Move", false );
 				_anim.SetBool( "Jump", true );
-				_anim.SetBool( "Died", false );
 				break;
 			case ANIM_STATE.HIT_DOOR:
 				_anim.SetBool( "HitDoor", true );
-				_anim.SetBool( "Move", false );
-				_anim.SetBool( "Jump", false );
-				_anim.SetBool( "Died", false );
 				break;
 			case ANIM_STATE.DIED:
-				_anim.SetBool( "HitDoor", false );
-				_anim.SetBool( "Move", false );
-				_anim.SetBool( "Jump", false );
 				_anim.SetBool( "Died", true );
 				break;
 		}

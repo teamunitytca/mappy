@@ -465,19 +465,9 @@ Prefab:
       propertyPath: _startPos
       value: 
       objectReference: {fileID: 2014663247}
-    - target: {fileID: 114428238513862718, guid: 8c56d43df0b2c9b4f8c2db7ad0e880a0,
-        type: 2}
-      propertyPath: _anim
-      value: 
-      objectReference: {fileID: 1296459318}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c56d43df0b2c9b4f8c2db7ad0e880a0, type: 2}
   m_IsPrefabParent: 0
---- !u!95 &1296459318 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95318315041749564, guid: 8c56d43df0b2c9b4f8c2db7ad0e880a0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1283352841}
 --- !u!1 &2014663247
 GameObject:
   m_ObjectHideFlags: 0
