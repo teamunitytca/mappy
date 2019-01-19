@@ -9,6 +9,7 @@ public class ACTION : MonoBehaviour {
 	[SerializeField] float speed=0.01f;
 	[SerializeField] int R;
 	bool _counter = false;
+	bool _dorapo_trigger = false;
 	float velocity = 0;
 	void Start () {
 		_animator = GetComponent<Animator> ();
@@ -60,27 +61,28 @@ public class ACTION : MonoBehaviour {
 				transform.rotation = Quaternion.Euler (0, 0, 90);
 				_counter = true;
 			} 
-			if (velocity < 0) {
-				_counter = false;
-			}
 		}
 		if (col.gameObject.tag == "Floor") {
-			if (this.transform.rotation.z <= 1&&this.transform.rotation.z >= -1) {
+			if (this.transform.rotation.z <= 1 && this.transform.rotation.z >= -1) {
 				velocity = speed;
-				_counter = false;
+			} 
+			if (_dorapo_trigger == true) {
+				transform.rotation = Quaternion.Euler (0, 0,90);
+				_counter = true;
+				if (_counter == true) {
+					_animator.SetBool ("WALK", true);
+				} else {
+					_animator.SetBool ("WALK", false);}
 			}
 		}
+		if (col.gameObject.tag == "dorapo") {
+			_dorapo_trigger = true;
+		}
 	}
-	void OnCollisionEvit2D(Collision col){
-	
-	}
-
-
-
 	void Update () {
 		if (_counter == false) {
-			_animator.SetBool ("door", false);
 			move ();
+			_animator.SetBool ("door", false);
 		} 
 		if (_counter == true) {
 			velocity = 0;
@@ -90,6 +92,7 @@ public class ACTION : MonoBehaviour {
 				countdown = 3;
 				velocity = speed;
 				_counter = false;
+				_dorapo_trigger = false;
 			}
 
 		}
