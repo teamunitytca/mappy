@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Entity : MonoBehaviour {
+public class Entity : MonoBehaviour 
+{
     public enum MOVING
     {
         LEFT,
@@ -44,10 +45,12 @@ public class Entity : MonoBehaviour {
     protected Rigidbody2D _rigidbody;
     protected Collider2D _collider;
 
-    GameObject _player;
+    protected GameObject _player;
 
     private uint _currentFallTime = 100;
     private float _lastSpeed = 1000;
+
+    protected Vector2 _lastPos;
 
     protected void Awake()
     {
@@ -68,14 +71,6 @@ public class Entity : MonoBehaviour {
         if (_falled)
         {
             _state = MOVING.FALLED;
-            //_rigidbody.drag = 0.001f;
-
-            if (_rigidbody.velocity.x < _lastSpeed * 10)
-            {
-                //Destroy(gameObject);
-            }
-
-            _lastSpeed = _rigidbody.velocity.x;
 
             if (_currentFallTime == 0)
             {
@@ -120,6 +115,8 @@ public class Entity : MonoBehaviour {
 
     protected void Move()
     {
+        _lastPos = transform.position;
+
         switch (_state)
         {
             case MOVING.LEFT:

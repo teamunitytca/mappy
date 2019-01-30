@@ -6,15 +6,9 @@ using UnityEngine;
 public class Meowkie : Entity
 {
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            _rigidbody.velocity = new Vector2(0, 3);
-        }
-        
-
-        if (Mathf.Abs(_rigidbody.velocity.x) < 0.00001f && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
+        if ( (int)(_lastPos.x * 100)  == (int)(transform.position.x * 100) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
         {
             UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
             SetRandomDir();
@@ -24,8 +18,7 @@ public class Meowkie : Entity
         Move();
 
         _animator.SetBool("Falled", _falled);
-        _animator.SetFloat("Speed", Mathf.Abs(_rigidbody.velocity.x * 100));
-
+        _animator.SetFloat("Speed", _lastPos.x - transform.position.x);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,19 +34,7 @@ public class Meowkie : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "FloorArea")
-        {
-            Physics2D.IgnoreCollision(collision.collider, _collider);
-            return;
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Physics2D.IgnoreCollision(collision.collider, _collider);
-            return;
-        }
-
-        if (collision.gameObject.tag == "Door" && _falled)
+        if (collision.gameObject.tag == "FloorArea" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Door" && _falled)
         {
             Physics2D.IgnoreCollision(collision.collider, _collider);
             return;
@@ -61,9 +42,5 @@ public class Meowkie : Entity
 
         _isOnGrond = true;
         SetRandomDir();
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
     }
 }

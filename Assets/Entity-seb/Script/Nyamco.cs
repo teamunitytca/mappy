@@ -39,19 +39,7 @@ public class Nyamco : Entity
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "FloorArea")
-        {
-            Physics2D.IgnoreCollision(collision.collider, _collider);
-            return;
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Physics2D.IgnoreCollision(collision.collider, _collider);
-            return;
-        }
-
-        if (collision.gameObject.tag == "Door" && _falled)
+        if (collision.gameObject.tag == "FloorArea" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Door" && _falled)
         {
             Physics2D.IgnoreCollision(collision.collider, _collider);
             return;

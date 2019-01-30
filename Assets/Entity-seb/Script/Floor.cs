@@ -8,12 +8,10 @@ public class Floor : MonoBehaviour
     private uint _floorNr;
 
     private GameObject _player;
-    private PlayerTraker _traker;
 
     private void Awake()
     {
         _player = GameObject.FindWithTag("Player");
-        _traker = _player.GetComponent<PlayerTraker>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,7 +19,7 @@ public class Floor : MonoBehaviour
         if (collision.tag != "Player")
             return;
 
-        if (_floorNr != _traker.GetCurrentFloor())
-            _traker.SetCurrentFloor(_floorNr);
+        if (_floorNr != _player.GetComponent<Player>().GetCurrentFloor())
+            _player.GetComponent<Player>().SetCurrentFloor(_floorNr);
     }
 }

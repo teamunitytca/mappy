@@ -1,40 +1,59 @@
 ﻿using UnityEngine;
 
-public class Player : Entity {
+public class Player : Entity 
+{
 	[SerializeField]
 	GameObject _startPos = null;
 	LifeCounter _life = null;
 	[SerializeField]
 	Animator _anim = null;
 
+	[SerializeField]
+    private uint _currentFloor;
+    [SerializeField]
+    private uint _prevFloor;
+
+    
+
 	// Use this for initialization
-	void Start( ) {
-		_life = GameObject.Find( "LifeCounter" ).GetComponent<LifeCounter>( );
+	void Start() 
+	{
+		_life = GameObject.Find("LifeCounter").GetComponent<LifeCounter>();
 	}
 
-	private void Update( ) {
-		updateState( );
-		updateAnimState( );
+	private void Update() 
+	{
+		updateState();
+		updateAnimState();
 	}
 
-	void FixedUpdate( ) {
-		Move( );
+	void FixedUpdate() 
+	{
+		Move();
 	}
 
-	void OnBecameInvisible( ) {
-		_life.loseLife( );
-		resetPos( );
+	void OnBecameInvisible() 
+	{
+		_life.loseLife();
+		resetPos();
 		_rigidbody.velocity = Vector2.zero;
 	}
 
-	void updateState( ) {
-		if ( Input.GetButton( "Horizontal" ) && _movable ) {
-			if ( Input.GetAxis( "Horizontal" ) < 0 ) {
+	void updateState() 
+	{
+		if (Input.GetButton("Horizontal") && _movable) 
+		{
+			if (Input.GetAxis("Horizontal") < 0 ) 
+			{
 				_state = MOVING.LEFT;
-			} else {
+			} 
+			else 
+			{
 				_state = MOVING.RIGTH;
 			}
-		} else if ( _state != MOVING.JUMP ) {
+		} 
+		else if (_state != MOVING.JUMP) 
+		{
 			_state = MOVING.IDLE;
 		}
 	}
@@ -76,7 +95,19 @@ public class Player : Entity {
 		_movable = true;
 	}
 
-	void OnCollisionExit2D( Collision2D collision ) {
-		//to do, somthing importent
-	}
+	public void SetCurrentFloor(uint floor)
+    {
+        _prevFloor = _currentFloor;
+        _currentFloor = floor;
+    }
+
+    public uint GetCurrentFloor()
+    {
+        return _currentFloor;
+    }
+
+    public uint GetPrevFloor()
+    {
+        return _prevFloor;
+    }
 }

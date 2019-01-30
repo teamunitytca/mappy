@@ -58,3 +58,6 @@ TagManager:
   - name: House
     uniqueID: 1124051909
     locked: 0
+  - name: Entity
+    uniqueID: 339807695
+    locked: 0
