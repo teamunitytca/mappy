@@ -4,6 +4,7 @@ public class Player : Entity
 {
 	[SerializeField]
 	GameObject _startPos = null;
+	GameObject _trampolin = null;
 	LifeCounter _life = null;
 	[SerializeField]
 	Animator _anim = null;
@@ -91,11 +92,21 @@ public class Player : Entity
 		if ( collision.gameObject.tag == "Enemy" ) {
 			_life.loseLife( );
 			resetPos( );
-		}
+		} //else if ( collision.gameObject.tag == "Floor" && _trampolin != null ) {
+  //          _trampolin.gameObject.GetComponent< Trampoline >( ).resetTrampolineHP( );
+  //          _trampolin = null;
+  //      }
 		_movable = true;
 	}
 
-	public void SetCurrentFloor(uint floor)
+    //void OnTriggerEnter( Collider other )
+    //{
+    //    if ( other.gameObject.tag == "Trampolin" ) {
+    //        _trampolin = other.gameObject;
+    //    }
+    //}
+
+    public void SetCurrentFloor(uint floor)
     {
         _prevFloor = _currentFloor;
         _currentFloor = floor;
