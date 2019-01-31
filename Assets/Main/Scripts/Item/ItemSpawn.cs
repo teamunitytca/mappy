@@ -12,6 +12,8 @@ public class ItemSpawn : MonoBehaviour {
 
 	GameObject _hurryUp;
 
+    const int APPEAR_LIMIT = 14; 
+
 	int _item_no = 0;
 
 	// Use this for initialization
@@ -37,15 +39,15 @@ public class ItemSpawn : MonoBehaviour {
 	}
 
 	void itemSet( ) {
-		for ( int i = 0; i < transform.childCount; i++ ) {
+		for ( int i = 0; i < APPEAR_LIMIT; i++ ) {
 			int empty_pos_no = Random.Range( 0, transform.childCount );
 
 			while ( _item_pos [ empty_pos_no ] != null ) {
 				empty_pos_no = Random.Range( 0, transform.childCount );
 			}
 			_item_pos [ empty_pos_no ] = Instantiate( _item [ _item_no % _item.Length ], _empty_pos [ empty_pos_no ].transform.position, Quaternion.identity );
+		    _item_no++;
 		}
-		_item_no++;
 	}
 
 	bool HasItem( ) {
