@@ -418,6 +418,11 @@ Prefab:
       propertyPath: m_Name
       value: Meowkie (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 50335881964453304, guid: 484f32d21d85dae46a5eede1ae691900,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 484f32d21d85dae46a5eede1ae691900, type: 2}
   m_IsPrefabParent: 0
@@ -1081,46 +1086,6 @@ Prefab:
     - target: {fileID: 4151535557529714, guid: 6d084d9db743d034ea070a0b8706bd5f, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 61307736124284274, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.015248477
-      objectReference: {fileID: 0}
-    - target: {fileID: 61307736124284274, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.20688665
-      objectReference: {fileID: 0}
-    - target: {fileID: 61899536389247210, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.013554215
-      objectReference: {fileID: 0}
-    - target: {fileID: 61899536389247210, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.21027517
-      objectReference: {fileID: 0}
-    - target: {fileID: 61402533165728588, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.013554275
-      objectReference: {fileID: 0}
-    - target: {fileID: 61402533165728588, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.21027505
-      objectReference: {fileID: 0}
-    - target: {fileID: 61870285233063984, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.01694274
-      objectReference: {fileID: 0}
-    - target: {fileID: 61870285233063984, guid: 6d084d9db743d034ea070a0b8706bd5f,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.20349813
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d084d9db743d034ea070a0b8706bd5f, type: 2}

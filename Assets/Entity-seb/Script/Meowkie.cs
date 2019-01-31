@@ -18,7 +18,7 @@ public class Meowkie : Entity
         Move();
 
         _animator.SetBool("Falled", _falled);
-        _animator.SetFloat("Speed", _lastPos.x - transform.position.x);
+        _animator.SetFloat("Speed", Mathf.Abs(_lastPos.x - transform.position.x));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,8 +27,15 @@ public class Meowkie : Entity
 
         if (collision.tag == "FloorJumpColider")
         {
-            if (rng == 0)
+            if (rng == 0 && collision.GetComponent<JumpOffPoints>().left && collision.GetComponent<JumpOffPoints>().rigth) 
                 SetRandomDir();
+            else if (rng == 0)
+            {
+                if (collision.GetComponent<JumpOffPoints>().left)
+                    _state = MOVING.LEFT;
+                if (collision.GetComponent<JumpOffPoints>().rigth)
+                    _state = MOVING.RIGTH;
+            }
         }
     }
 
