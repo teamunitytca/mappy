@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class HighScore : MonoBehaviour {
-	static public int _high_score = 20000;
+	public static int _high_score = 20000;
 	[SerializeField] Text _text = null;
 	[SerializeField] NowScore _score = null;
 
@@ -18,6 +18,7 @@ public class HighScore : MonoBehaviour {
 				_high_score = _score.getScore( );
 			}
 		}
+		
 		_text.text = "HI SCORE" + "\n" + _high_score.ToString( "D2" );
 	}
 }

@@ -16,6 +16,7 @@ public class SceneChange : MonoBehaviour {
 	// Update is called once per frame
 	void Update( ) {
 		if ( _target_scene == "Main" ) {
+			NowScore._now_score = 0;
 			if ( Input.GetKeyDown( KeyCode.Space ) ) {
 				_audio.PlayOneShot( _audio.clip );
 				_sound_flag = true;

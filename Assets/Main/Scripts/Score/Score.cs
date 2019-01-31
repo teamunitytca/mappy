@@ -99,6 +99,7 @@ public class Score : MonoBehaviour {
 		if ( Input.GetKey( KeyCode.B ) ) {
 			if ( Input.GetKey( KeyCode.R ) ) {
 				PlayerPrefs.DeleteAll( );
+				HighScore._high_score = 20000;
 			}
 		}
 	}
