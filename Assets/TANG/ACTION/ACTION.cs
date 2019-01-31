@@ -75,9 +75,11 @@ public class ACTION : MonoBehaviour {
 					_animator.SetBool ("WALK", false);}
 			}
 		}
-		if (col.gameObject.tag == "dorapo") {
-			_dorapo_trigger = true;
-		}
+	}
+	void OnCollisionExit2D(Collision2D col){
+	if (col.gameObject.tag == "Floor") {
+		_dorapo_trigger = true;
+	}
 	}
 	void Update () {
 		if (_counter == false) {
