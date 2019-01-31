@@ -14,14 +14,9 @@ public class ItemSpawn : MonoBehaviour
     [SerializeField]
     int _blinkingIntervel = 0;
     GameObject _hurryUp;
-
-<<<<<<< .merge_file_a12440
+    
     int _item_no = 0;
-=======
-    const int APPEAR_LIMIT = 14; 
-
-	int _item_no = 0;
->>>>>>> .merge_file_a09600
+    const int APPEAR_LIMIT = 14;
 
     // Use this for initialization
     void Start()
@@ -53,8 +48,7 @@ public class ItemSpawn : MonoBehaviour
                 _blinkingIntervel++;
         }
     }
-
-<<<<<<< .merge_file_a12440
+    
     void itemSet()
     {
         for (int i = 0; i < transform.childCount; i++)
@@ -69,19 +63,6 @@ public class ItemSpawn : MonoBehaviour
         }
         _item_no++;
     }
-=======
-	void itemSet( ) {
-		for ( int i = 0; i < APPEAR_LIMIT; i++ ) {
-			int empty_pos_no = Random.Range( 0, transform.childCount );
-
-			while ( _item_pos [ empty_pos_no ] != null ) {
-				empty_pos_no = Random.Range( 0, transform.childCount );
-			}
-			_item_pos [ empty_pos_no ] = Instantiate( _item [ _item_no % _item.Length ], _empty_pos [ empty_pos_no ].transform.position, Quaternion.identity );
-		    _item_no++;
-		}
-	}
->>>>>>> .merge_file_a09600
 
     bool HasItem()
     {
