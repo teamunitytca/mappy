@@ -18,6 +18,7 @@ TagManager:
   - trampoline
   - dorapo
   - Healer
+  - HurryUpText
   layers:
   - Default
   - TransparentFX

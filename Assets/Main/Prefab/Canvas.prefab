@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 222844063198231822}
   - component: {fileID: 114252412155650700}
   m_Layer: 5
-  m_Name: Text
+  m_Name: HurryText
   m_TagString: HurryUpText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cef1907fe858114793a674e74cc2cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audio: {fileID: 0}
 --- !u!114 &114037330165731096
 MonoBehaviour:
   m_ObjectHideFlags: 1
