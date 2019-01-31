@@ -203,6 +203,6 @@ MonoBehaviour:
   - {fileID: 1070599048363002, guid: 477dad9a33929c14d99205cba3953eea, type: 2}
   - {fileID: 1982919578816204, guid: 61b5230aff3c10c4a86ed9b1bd902899, type: 2}
   - {fileID: 1257919748188116, guid: b045551e42481b04299a2d3b897284f4, type: 2}
+  - {fileID: 1684817388041528, guid: c79f44e838fd45d48a3fe080a3bb36a7, type: 2}
   _item_pos: []
   _empty_pos: []
-  _item_reset_timer: 0

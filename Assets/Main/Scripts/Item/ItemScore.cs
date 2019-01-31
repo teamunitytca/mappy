@@ -10,19 +10,22 @@ public class ItemScore : Item {
 	const int SAFE_SCORE          = 500;
 
 	NowScore _score;
-
+	AudioSource _audio;
 
 	// Use this for initialization
 	void Start ( ) {
 		_score = GameObject.Find( "NowScoreText" ).GetComponent<NowScore>( );
+		_audio = GameObject.Find( "Item_SE" ).GetComponent<AudioSource>( );
 	}
 
 	// Update is called once per frame
 	void Update ( ) {
 
 	}
-
 	void OnDestroy ( ) {
+		if ( _audio ) {
+			_audio.PlayOneShot( _audio.clip );
+		}
 		switch ( tag ) {
 			case "Radio":
 				_score.addScore( RADIO_SCORE );

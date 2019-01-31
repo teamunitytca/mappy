@@ -5,6 +5,7 @@ public class LifeCounter : MonoBehaviour {
 	const int HP_MAX = 5;
 	int _HP = 2;
 	Image[ ] _life_counter = new Image[ HP_MAX ];
+	[SerializeField] AudioSource _audio = null;
 
 	
 	// Use this for initialization
@@ -24,6 +25,7 @@ public class LifeCounter : MonoBehaviour {
 		}
 
 		if ( _HP <= 0 ) {
+			_audio.PlayOneShot( _audio.clip );
 			SceneChanger.sceneChange( "Result" );
 		}
 	}
