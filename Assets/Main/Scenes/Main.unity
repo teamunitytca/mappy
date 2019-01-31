@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &341793891 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82594462507624500, guid: 2161c7769f429c54c8657e349f87e93d,
+    type: 2}
+  m_PrefabInternal: {fileID: 938893330}
 --- !u!1001 &938893330
 Prefab:
   m_ObjectHideFlags: 0
@@ -349,6 +354,15 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114024645450268580, guid: 915f1a96ed5359744ae2ac9b4c2f31e4,
+        type: 2}
+      propertyPath: _audio
+      value: 
+      objectReference: {fileID: 341793891}
+    - target: {fileID: 1429413255342092, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}
+      propertyPath: m_TagString
+      value: LifeCounter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}

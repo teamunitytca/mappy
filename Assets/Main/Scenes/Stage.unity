@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: {x: 0, y: 350}
+  _trampoline_no: 2
 --- !u!95 &552577221
 Animator:
   serializedVersion: 3
@@ -257,7 +258,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 77e61e8cfff191b4f85a3f48582bdbd6, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 77e61e8cfff191b4f85a3f48582bdbd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

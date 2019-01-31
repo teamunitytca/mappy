@@ -40,4 +40,8 @@ public class LifeCounter : MonoBehaviour {
 	public void loseLife ( ) {
 		_HP--;
 	}
+
+	public bool isDead( ) {
+		return ( _HP <= 0 );
+	}
 }

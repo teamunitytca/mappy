@@ -8,7 +8,7 @@ public class Score : MonoBehaviour {
 	[SerializeField] Text [ ] _scoreText = new Text [ MAX_RANKING ];    //scoreテキストの配列
 	int _show_score;                                        //プレイの時のスコアを入れる変数
 	static int [ ] _ranking = new int [ MAX_RANKING ];        //１位～５位の格納配列
-	string [ ] _key = new string [ MAX_RANKING ];             //セーブするコード 
+	string [ ] _key = new string [ MAX_RANKING + 1 ];             //セーブするコード
 
 	// Use this for initialization
 	void Start( ) {
@@ -39,12 +39,13 @@ public class Score : MonoBehaviour {
 		_key [ 2 ] = "SaveRanking3";
 		_key [ 3 ] = "SaveRanking4";
 		_key [ 4 ] = "SaveRanking5";
+		_key [ 5 ] = "SaveRanking6";
 	}
 
 
 	//ランキングをロードする
 	void RankingLoad( ) {
-		for ( int i = 0; i < MAX_RANKING; i++ ) {
+		for ( int i = 0; i < MAX_RANKING - 1; i++ ) {
 			_ranking [ i ] = PlayerPrefs.GetInt( _key [ i ], 0 );
 		}
 	}
@@ -90,6 +91,7 @@ public class Score : MonoBehaviour {
 		for ( int i = 0; i < MAX_RANKING; i++ ) {
 			PlayerPrefs.SetInt( _key [ i ], _ranking [ i ] );
 		}
+		PlayerPrefs.SetInt( _key [ 5 ], HighScore._high_score );
 	}
 
 	//Bを押しながらRを押したらランキングをリセットする

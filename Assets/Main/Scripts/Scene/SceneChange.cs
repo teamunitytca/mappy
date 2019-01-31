@@ -15,12 +15,20 @@ public class SceneChange : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update( ) {
-		if ( Input.anyKeyDown ) {
-			_audio.PlayOneShot( _audio.clip );
-			_sound_flag = true;
+		if ( _target_scene == "Main" ) {
+			if ( Input.GetKeyDown( KeyCode.Space ) ) {
+				_audio.PlayOneShot( _audio.clip );
+				_sound_flag = true;
+			}
+			if ( !_audio.isPlaying && _sound_flag ) {
+				SceneChanger.sceneChange( _target_scene );
+			}
 		}
-		if ( !_audio.isPlaying && _sound_flag && _target_scene == "Title" ) {
-			SceneChanger.sceneChange( _target_scene );
+
+		if ( _target_scene == "Title" ) {
+			if ( Input.GetKeyDown( KeyCode.Space ) ) {
+				SceneChanger.sceneChange( _target_scene );
+			}
 		}
 	}
 }

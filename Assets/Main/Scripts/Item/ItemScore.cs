@@ -11,11 +11,13 @@ public class ItemScore : Item {
 
 	NowScore _score;
 	AudioSource _audio;
+	LifeCounter _life_counter;
 
 	// Use this for initialization
 	void Start ( ) {
 		_score = GameObject.Find( "NowScoreText" ).GetComponent<NowScore>( );
 		_audio = GameObject.Find( "Item_SE" ).GetComponent<AudioSource>( );
+		_life_counter = GameObject.FindGameObjectWithTag( "LifeCounter" ).GetComponent<LifeCounter>( );
 	}
 
 	// Update is called once per frame
@@ -25,6 +27,9 @@ public class ItemScore : Item {
 	void OnDestroy ( ) {
 		if ( _audio ) {
 			_audio.PlayOneShot( _audio.clip );
+		}
+		if ( _life_counter.isDead( ) ) {
+			return;
 		}
 		switch ( tag ) {
 			case "Radio":
