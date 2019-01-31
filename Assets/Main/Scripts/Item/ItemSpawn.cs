@@ -43,7 +43,6 @@ public class ItemSpawn : MonoBehaviour {
 			while ( _item_pos [ empty_pos_no ] != null ) {
 				empty_pos_no = Random.Range( 0, transform.childCount );
 			}
-
 			_item_pos [ empty_pos_no ] = Instantiate( _item [ _item_no % _item.Length ], _empty_pos [ empty_pos_no ].transform.position, Quaternion.identity );
 		}
 		_item_no++;
@@ -57,7 +56,6 @@ public class ItemSpawn : MonoBehaviour {
 				tmp = true;
 			}
 		}
-
 		return tmp;
 	}
 }
