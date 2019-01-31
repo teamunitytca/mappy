@@ -2,79 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemSpawn : MonoBehaviour
-{
+public class ItemSpawn : MonoBehaviour {
 
-    [SerializeField]
-    GameObject[] _item = null;
+	[SerializeField] GameObject [ ] _item = null;
 
-    [SerializeField]
-    GameObject[] _item_pos = null;
+	[SerializeField] GameObject [ ] _item_pos = null;
 
-    [SerializeField]
-    GameObject[] _empty_pos = null;
-    
-    GameObject _hurryUp;
+	[SerializeField] GameObject [ ] _empty_pos = null;
 
+	GameObject _hurryUp;
 
-    // Use this for initialization
-    void Start()
-    {
-        _hurryUp = GameObject.FindWithTag("HurryUpText");
-        _hurryUp.SetActive(false);
+	int _item_no = 0;
 
-        _empty_pos = new GameObject[transform.childCount];
-        _item_pos = new GameObject[transform.childCount];
+	// Use this for initialization
+	void Start( ) {
+		_hurryUp = GameObject.FindWithTag( "HurryUpText" );
+		_hurryUp.SetActive( false );
 
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            _empty_pos[i] = transform.GetChild(i).gameObject;
-        }
+		_empty_pos = new GameObject [ transform.childCount ];
+		_item_pos = new GameObject [ transform.childCount ];
 
-        itemSet();
-    }
+		for ( int i = 0; i < transform.childCount; i++ ) {
+			_empty_pos [ i ] = transform.GetChild( i ).gameObject;
+		}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!HasItem())
-        {
-            _hurryUp.SetActive(true);
-        }
-    }
+		itemSet( );
+	}
 
-    void itemSet()
-    {
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            int item_no = Random.Range(0, _item.Length);
-            int empty_pos_no = Random.Range(0, transform.childCount);
+	// Update is called once per frame
+	void Update( ) {
+		if ( !HasItem( ) ) {
+			_hurryUp.SetActive( true );
+		}
+	}
 
-            while (_item_pos[empty_pos_no] != null)
-            {
-                empty_pos_no = Random.Range(0, transform.childCount);
-            }
+	void itemSet( ) {
+		for ( int i = 0; i < transform.childCount; i++ ) {
+			int empty_pos_no = Random.Range( 0, transform.childCount );
 
-            _item_pos[empty_pos_no] = Instantiate(_item[item_no], _empty_pos[empty_pos_no].transform.position, Quaternion.identity);
-        }
-    }
+			while ( _item_pos [ empty_pos_no ] != null ) {
+				empty_pos_no = Random.Range( 0, transform.childCount );
+			}
 
-    bool HasItem()
-    {
-        bool tmp = false;
+			_item_pos [ empty_pos_no ] = Instantiate( _item [ _item_no % _item.Length ], _empty_pos [ empty_pos_no ].transform.position, Quaternion.identity );
+		}
+		_item_no++;
+	}
 
-        for (int i = 0; i < _item_pos.Length; i++)
-        {
-            if (_item_pos[i] != null)
-            {
-                tmp = true;
-            }
-        }
+	bool HasItem( ) {
+		bool tmp = false;
 
-        return tmp;
-    }
+		for ( int i = 0; i < _item_pos.Length; i++ ) {
+			if ( _item_pos [ i ] != null ) {
+				tmp = true;
+			}
+		}
+
+		return tmp;
+	}
 }
-
-
-
-
