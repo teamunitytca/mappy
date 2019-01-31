@@ -61,10 +61,10 @@ public class Score : MonoBehaviour {
 
 		//最後から順番に見て入れ替えていく
 		for ( int i = 0; i < MAX_RANKING - 1; i++ ) {
-			if ( _ranking [ MAX_RANKING - 1 ] > _ranking [ MAX_RANKING - 2 ] ) {
-				temp = _ranking [ MAX_RANKING - 2 ];
-				_ranking [ MAX_RANKING - 2 ] = _ranking [ MAX_RANKING - 1 ];
-				_ranking [ MAX_RANKING - 1 ] = temp;
+			if ( _ranking [ count ] > _ranking [ count - 1 ] ) {
+				temp = _ranking [ count - 1 ];
+				_ranking [ count - 1 ] = _ranking [ count ];
+				_ranking [ count ] = temp;
 			}
 			count--;
 		}
