@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 114944380910239536}
   - component: {fileID: 114195736030687506}
   - component: {fileID: 58331533348488508}
+  - component: {fileID: 95987147731506230}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -94,7 +95,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &58331533348488508
 CircleCollider2D:
@@ -108,7 +109,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02, y: -0.02}
+  m_Offset: {x: -0.02, y: -0.06}
   serializedVersion: 2
   m_Radius: 0.02
 --- !u!58 &58809656173251714
@@ -126,6 +127,23 @@ CircleCollider2D:
   m_Offset: {x: -0.060000002, y: 0.008595958}
   serializedVersion: 2
   m_Radius: 0.021404043
+--- !u!95 &95987147731506230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707755576342338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ff7cf9392bb268d49828432a4aa74bf6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114047952390459308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,14 +178,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a7abcb3bbd5c4ca2811f3c6f0cdc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 0.07
+  _movementSpeed: 0.02
   _jumpSpeed: 0.01
   _state: 2
+  _anim_state: 0
   _isOnGrond: 0
   _falled: 0
   _fallTime: 100
   _movable: 1
   _startPos: {fileID: 0}
+  _anim: {fileID: 95987147731506230}
+  _currentFloor: 0
+  _prevFloor: 0
 --- !u!114 &114944380910239536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,8 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1fc2d8ba6f2b84fa391601652877dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentFloor: 0
-  _prevFloor: 0
 --- !u!212 &212197310493904666
 SpriteRenderer:
   m_ObjectHideFlags: 1
