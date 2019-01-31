@@ -12,12 +12,15 @@ public class Trampoline : MonoBehaviour
 	[SerializeField] 
 	Vector2 _velocity = Vector2.zero;
 
+	[SerializeField] int _trampoline_no = 0;
+
 	// Use this for initialization
 	void Start() 
 	{
 		_ontop = false;
 		_col = GetComponents<Collider2D>();
 		_trampoline_anim = GetComponent<Animator>();
+		_trampoline_anim.SetInteger( "NO", _trampoline_no );
 	}
 
 	// Update is called once per frame
