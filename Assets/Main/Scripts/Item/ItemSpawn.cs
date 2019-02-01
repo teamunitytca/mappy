@@ -9,12 +9,12 @@ public class ItemSpawn : MonoBehaviour {
 	[SerializeField] GameObject [ ] _item_pos = null;
 
 	[SerializeField] GameObject [ ] _empty_pos = null;
-
+	
 	[SerializeField]
-	int _blinkingIntervel = 0;
-	GameObject _hurryUp;
+	private int _blinkingIntervel = 0;
+	private GameObject _hurryUp;
 
-	int _item_no = 0;
+	private int _item_no = 0;
 	const int APPEAR_LIMIT = 14;
 
 	// Use this for initialization
@@ -42,7 +42,7 @@ public class ItemSpawn : MonoBehaviour {
 		}
 	}
 
-	void itemSet( ) {
+	private void itemSet( ) {
 		if ( _item_pos.Length < APPEAR_LIMIT ) {
 			return;
 		}
