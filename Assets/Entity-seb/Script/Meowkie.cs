@@ -28,13 +28,27 @@ public class Meowkie : Entity
         if (collision.tag == "FloorJumpColider")
         {
             if (rng == 0 && collision.GetComponent<JumpOffPoints>().left && collision.GetComponent<JumpOffPoints>().rigth)
+            {
                 SetRandomDir();
+                _rigidbody.WakeUp();
+
+                if (_state == MOVING.LEFT)
+                {
+                    _rigidbody.AddForce(new Vector2(-400,0));
+                }
+                if (_state == MOVING.RIGTH)
+                {
+                    _rigidbody.AddForce(new Vector2(400, 0));
+                }
+            }
             else if (rng == 0)
             {
                 if (collision.GetComponent<JumpOffPoints>().left)
                     _state = MOVING.LEFT;
                 if (collision.GetComponent<JumpOffPoints>().rigth)
                     _state = MOVING.RIGTH;
+
+                _rigidbody.WakeUp();
             }
         }
     }
