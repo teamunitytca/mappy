@@ -542,6 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34909408}
   - component: {fileID: 34909409}
+  - component: {fileID: 34909410}
   m_Layer: 0
   m_Name: x3y1
   m_TagString: FloorJumpColider
@@ -589,6 +590,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &34909410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 34909407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &39081777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 55643183}
   - component: {fileID: 55643184}
+  - component: {fileID: 55643185}
   m_Layer: 0
   m_Name: x0y6
   m_TagString: FloorJumpColider
@@ -1108,6 +1123,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27166945, y: 0.20349813}
   m_EdgeRadius: 0
+--- !u!114 &55643185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55643182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &81541662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,6 +1219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81679765}
   - component: {fileID: 81679766}
+  - component: {fileID: 81679767}
   m_Layer: 0
   m_Name: x2y4
   m_TagString: FloorJumpColider
@@ -1238,6 +1267,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2769785, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &81679767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81679764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &85789394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 109257553}
   - component: {fileID: 109257554}
+  - component: {fileID: 109257555}
   m_Layer: 0
   m_Name: x0y3
   m_TagString: FloorJumpColider
@@ -1811,6 +1854,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2730835, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &109257555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109257552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &112915508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,7 +2101,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122953794}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.7656102, y: 0.062395096, z: 1}
@@ -2060,6 +2116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 126129032}
   - component: {fileID: 126129033}
+  - component: {fileID: 126129034}
   m_Layer: 0
   m_Name: x1y2
   m_TagString: FloorJumpColider
@@ -2107,6 +2164,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28964913, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &126129034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126129031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &128179838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4110,6 +4180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 353761159}
   - component: {fileID: 353761160}
+  - component: {fileID: 353761161}
   m_Layer: 0
   m_Name: x2y3
   m_TagString: FloorJumpColider
@@ -4157,6 +4228,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2769785, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &353761161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353761158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &358671003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,6 +4752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391390962}
   - component: {fileID: 391390963}
+  - component: {fileID: 391390964}
   m_Layer: 0
   m_Name: x0y1
   m_TagString: FloorJumpColider
@@ -4715,6 +4800,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2716694, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &391390964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391390961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &392186440
 GameObject:
   m_ObjectHideFlags: 0
@@ -4897,6 +4995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 411220357}
   - component: {fileID: 411220358}
+  - component: {fileID: 411220359}
   m_Layer: 0
   m_Name: x0y2
   m_TagString: FloorJumpColider
@@ -4944,6 +5043,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2716694, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &411220359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411220356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &413397704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,6 +5368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 437772975}
   - component: {fileID: 437772976}
+  - component: {fileID: 437772977}
   m_Layer: 0
   m_Name: x1y1
   m_TagString: FloorJumpColider
@@ -5303,6 +5416,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331387, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &437772977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 437772974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &455110694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5412,6 +5538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 463001285}
   - component: {fileID: 463001286}
+  - component: {fileID: 463001287}
   m_Layer: 0
   m_Name: x2y5
   m_TagString: FloorJumpColider
@@ -5459,6 +5586,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.21027517}
   m_EdgeRadius: 0
+--- !u!114 &463001287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463001284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &477106232
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,6 +7870,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4227398723440136, guid: 506a88bd2602e5342a29642d759e8bf5,
     type: 2}
   m_PrefabInternal: {fileID: 739035296}
+--- !u!1 &754557920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 754557921}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754557921
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754557920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.558, y: -0.204, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &778920319
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,6 +8007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805376657}
   - component: {fileID: 805376658}
+  - component: {fileID: 805376659}
   m_Layer: 0
   m_Name: x3y0
   m_TagString: FloorJumpColider
@@ -7886,6 +8055,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &805376659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805376656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &814342948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8066,6 +8248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820196776}
   - component: {fileID: 820196777}
+  - component: {fileID: 820196778}
   m_Layer: 0
   m_Name: x0y5
   m_TagString: FloorJumpColider
@@ -8113,6 +8296,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27166945, y: 0.20349813}
   m_EdgeRadius: 0
+--- !u!114 &820196778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820196775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &829739020
 GameObject:
   m_ObjectHideFlags: 0
@@ -9226,6 +9422,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1429413255342092, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}
+      propertyPath: m_TagString
+      value: LifeCounter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}
   m_IsPrefabParent: 0
@@ -9437,6 +9637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967595704}
   - component: {fileID: 967595705}
+  - component: {fileID: 967595706}
   m_Layer: 0
   m_Name: x2y1
   m_TagString: FloorJumpColider
@@ -9484,6 +9685,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.270643, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &967595706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967595703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &970334624
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,7 +10407,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1042957245}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.05, z: 1}
@@ -10383,6 +10597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066244856}
   - component: {fileID: 1066244857}
+  - component: {fileID: 1066244858}
   m_Layer: 0
   m_Name: x1y3
   m_TagString: FloorJumpColider
@@ -10430,6 +10645,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2959845, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1066244858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066244855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1075622410
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,6 +12078,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114599276191973952, guid: 4f509f2f3170fbb46b023e5520b05010,
+        type: 2}
+      propertyPath: _startPos
+      value: 
+      objectReference: {fileID: 754557920}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f509f2f3170fbb46b023e5520b05010, type: 2}
   m_IsPrefabParent: 0
@@ -12191,7 +12424,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297590400}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.05, z: 1}
@@ -12279,6 +12512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315208862}
   - component: {fileID: 1315208863}
+  - component: {fileID: 1315208864}
   m_Layer: 0
   m_Name: x1y0
   m_TagString: FloorJumpColider
@@ -12326,6 +12560,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.270643, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1315208864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315208861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1324332855
 GameObject:
   m_ObjectHideFlags: 0
@@ -13400,6 +13647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418588612}
   - component: {fileID: 1418588613}
+  - component: {fileID: 1418588614}
   m_Layer: 0
   m_Name: x2y2
   m_TagString: FloorJumpColider
@@ -13447,6 +13695,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2769785, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1418588614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418588611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1436838987
 GameObject:
   m_ObjectHideFlags: 0
@@ -13556,6 +13817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446900064}
   - component: {fileID: 1446900065}
+  - component: {fileID: 1446900066}
   m_Layer: 0
   m_Name: x0y4
   m_TagString: FloorJumpColider
@@ -13603,6 +13865,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2730835, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1446900066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446900063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &1448317837
 GameObject:
   m_ObjectHideFlags: 0
@@ -13613,6 +13888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448317838}
   - component: {fileID: 1448317839}
+  - component: {fileID: 1448317840}
   m_Layer: 0
   m_Name: x3y6
   m_TagString: FloorJumpColider
@@ -13660,6 +13936,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.20688665}
   m_EdgeRadius: 0
+--- !u!114 &1448317840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1448317837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &1452387537
 GameObject:
   m_ObjectHideFlags: 0
@@ -13769,6 +14058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1481057267}
   - component: {fileID: 1481057268}
+  - component: {fileID: 1481057269}
   m_Layer: 0
   m_Name: x2y6
   m_TagString: FloorJumpColider
@@ -13816,6 +14106,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.21027517}
   m_EdgeRadius: 0
+--- !u!114 &1481057269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481057266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1488079931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13925,6 +14228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496155780}
   - component: {fileID: 1496155781}
+  - component: {fileID: 1496155782}
   m_Layer: 0
   m_Name: x3y4
   m_TagString: FloorJumpColider
@@ -13972,6 +14276,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1496155782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1496155779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &1497357157
 GameObject:
   m_ObjectHideFlags: 0
@@ -14898,6 +15215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597610379}
   - component: {fileID: 1597610380}
+  - component: {fileID: 1597610381}
   m_Layer: 0
   m_Name: x1y6
   m_TagString: FloorJumpColider
@@ -14945,6 +15263,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29000342, y: 0.21027505}
   m_EdgeRadius: 0
+--- !u!114 &1597610381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597610378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1620762629
 GameObject:
   m_ObjectHideFlags: 0
@@ -15450,6 +15781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1648568215}
   - component: {fileID: 1648568216}
+  - component: {fileID: 1648568217}
   m_Layer: 0
   m_Name: x1y5
   m_TagString: FloorJumpColider
@@ -15497,6 +15829,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29000342, y: 0.21027505}
   m_EdgeRadius: 0
+--- !u!114 &1648568217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648568214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1652475359
 GameObject:
   m_ObjectHideFlags: 0
@@ -15705,6 +16050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662090374}
   - component: {fileID: 1662090375}
+  - component: {fileID: 1662090376}
   m_Layer: 0
   m_Name: x3y3
   m_TagString: FloorJumpColider
@@ -15752,6 +16098,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1662090376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662090373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &1665064901
 GameObject:
   m_ObjectHideFlags: 0
@@ -16698,6 +17057,106 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1777971970
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -19.166645
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.16667
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224236105090663782, guid: 2161c7769f429c54c8657e349f87e93d,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2161c7769f429c54c8657e349f87e93d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1778371952
 GameObject:
   m_ObjectHideFlags: 0
@@ -16910,6 +17369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799615434}
   - component: {fileID: 1799615435}
+  - component: {fileID: 1799615436}
   m_Layer: 0
   m_Name: x2y0
   m_TagString: FloorJumpColider
@@ -16957,6 +17417,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.270643, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1799615436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799615433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &1808946758
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,6 +17780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855885906}
   - component: {fileID: 1855885907}
+  - component: {fileID: 1855885908}
   m_Layer: 0
   m_Name: x3y2
   m_TagString: FloorJumpColider
@@ -17354,6 +17828,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &1855885908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855885905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!1 &1857538446
 GameObject:
   m_ObjectHideFlags: 0
@@ -18366,6 +18853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016520719}
   - component: {fileID: 2016520720}
+  - component: {fileID: 2016520721}
   m_Layer: 0
   m_Name: x0y0
   m_TagString: FloorJumpColider
@@ -18413,6 +18901,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.27308345, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &2016520721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016520718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 0
+  rigth: 1
 --- !u!1 &2040705538
 GameObject:
   m_ObjectHideFlags: 0
@@ -18597,6 +19098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075284155}
   - component: {fileID: 2075284156}
+  - component: {fileID: 2075284157}
   m_Layer: 0
   m_Name: x3y5
   m_TagString: FloorJumpColider
@@ -18644,6 +19146,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28331375, y: 0.20688665}
   m_EdgeRadius: 0
+--- !u!114 &2075284157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2075284154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 0
 --- !u!4 &2077800575 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4222577617018332, guid: c50ec535832559a49a91396c45e4f4ff,
@@ -18986,6 +19501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145037583}
   - component: {fileID: 2145037584}
+  - component: {fileID: 2145037585}
   m_Layer: 0
   m_Name: x1y4
   m_TagString: FloorJumpColider
@@ -19033,6 +19549,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2959845, y: 0.2373836}
   m_EdgeRadius: 0
+--- !u!114 &2145037585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145037582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313b7abeceb599d4b9ee84bf55e644ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  left: 1
+  rigth: 1
 --- !u!1 &2147356189
 GameObject:
   m_ObjectHideFlags: 0
