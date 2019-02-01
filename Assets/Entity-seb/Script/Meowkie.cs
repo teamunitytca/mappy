@@ -8,7 +8,7 @@ public class Meowkie : Entity
 
     void FixedUpdate()
     {
-        if ( (int)(_lastPos.x * 100)  == (int)(transform.position.x * 100) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
+        if ((int)(_lastPos.x * 100) == (int)(transform.position.x * 100) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
         {
             UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
             SetRandomDir();
@@ -27,7 +27,7 @@ public class Meowkie : Entity
 
         if (collision.tag == "FloorJumpColider")
         {
-            if (rng == 0 && collision.GetComponent<JumpOffPoints>().left && collision.GetComponent<JumpOffPoints>().rigth) 
+            if (rng == 0 && collision.GetComponent<JumpOffPoints>().left && collision.GetComponent<JumpOffPoints>().rigth)
                 SetRandomDir();
             else if (rng == 0)
             {
