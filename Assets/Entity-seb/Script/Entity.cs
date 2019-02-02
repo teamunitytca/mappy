@@ -48,7 +48,6 @@ public class Entity : MonoBehaviour
     protected GameObject _player;
 
     private uint _currentFallTime = 100;
-    private float _lastSpeed = 1000;
 
     protected Vector2 _lastPos;
 

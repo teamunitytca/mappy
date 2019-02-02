@@ -2,24 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Floor : MonoBehaviour
-{
-    [SerializeField]
-    private uint _floorNr;
+public class Floor : MonoBehaviour {
+	[SerializeField] uint _floorNr = 0;
 
-    private GameObject _player;
+	private GameObject _player;
 
-    private void Awake()
-    {
-        _player = GameObject.FindWithTag("Player");
-    }
+	private void Awake( ) {
+		_player = GameObject.FindWithTag( "Player" );
+	}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag != "Player")
-            return;
+	private void OnTriggerEnter2D( Collider2D collision ) {
+		if ( collision.tag != "Player" ) {
+			return;
+		}
 
-        if (_floorNr != _player.GetComponent<Player>().GetCurrentFloor())
-            _player.GetComponent<Player>().SetCurrentFloor(_floorNr);
-    }
+		if ( _floorNr != _player.GetComponent<Player>( ).GetCurrentFloor( ) ) {
+			_player.GetComponent<Player>( ).SetCurrentFloor( _floorNr );
+		}
+	}
 }

@@ -12,9 +12,6 @@ public class NowScore : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ( ) {
-		if ( Input.GetKeyDown( KeyCode.Space ) ) {
-			_now_score+= 10000;
-		}
 		_text.text = "NOW SCORE" + "\n" + _now_score.ToString( "D2" );
 	}
 

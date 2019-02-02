@@ -10,13 +10,13 @@ public class ItemScore : Item {
 	const int SAFE_SCORE          = 500;
 
 	NowScore _score;
-	AudioSource _audio;
+	AudioSource _item_se;
 	LifeCounter _life_counter;
 
 	// Use this for initialization
 	void Start ( ) {
 		_score = GameObject.Find( "NowScoreText" ).GetComponent<NowScore>( );
-		_audio = GameObject.Find( "Item_SE" ).GetComponent<AudioSource>( );
+		_item_se = GameObject.Find( "Item_SE" ).GetComponent<AudioSource>( );
 		_life_counter = GameObject.FindGameObjectWithTag( "LifeCounter" ).GetComponent<LifeCounter>( );
 	}
 
@@ -25,8 +25,8 @@ public class ItemScore : Item {
 
 	}
 	void OnDestroy ( ) {
-		if ( _audio ) {
-			_audio.PlayOneShot( _audio.clip );
+		if ( _item_se ) {
+			_item_se.PlayOneShot( _item_se.clip );
 		}
 		if ( _life_counter.isDead( ) ) {
 			return;

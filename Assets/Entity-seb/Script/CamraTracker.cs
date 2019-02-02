@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamraTracker : MonoBehaviour
 {
     [SerializeField]
-    private float _posZ;
+    private float _posZ = 0;
     private Camera cam;
 
 
