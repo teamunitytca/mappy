@@ -69,12 +69,14 @@ public class Player : Entity {
 	}
 
 	void resetPos( ) {
-		if ( _startPos != null ) {
+		if ( _startPos != null ) 
+		{
 			transform.position = _startPos.transform.position;
 		}
 	}
 
-	void OnCollisionEnter2D( Collision2D collision ) {
+	void OnCollisionEnter2D( Collision2D collision ) 
+	{
 		if ( collision.gameObject.tag == "Enemy" ) {
 			_life.loseLife( );
 			resetPos( );
