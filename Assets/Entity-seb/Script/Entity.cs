@@ -119,20 +119,24 @@ public class Entity : MonoBehaviour
         switch (_state)
         {
             case MOVING.LEFT:
+                _rigidbody.WakeUp();
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 				transform.position += new Vector3( -_movementSpeed, 0, 0 );
 				_anim_state = ANIM_STATE.MOVE;
 				break;
             case MOVING.RIGTH:
+                _rigidbody.WakeUp();
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 				transform.position += new Vector3( _movementSpeed, 0, 0 );
 				_anim_state = ANIM_STATE.MOVE;
                 break;
 			case MOVING.IDLE:
+                _rigidbody.WakeUp();
                 _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
 				_anim_state = ANIM_STATE.IDLE;
                 break;
 			case MOVING.FALLED:
+                _rigidbody.WakeUp();
                 break;
             case MOVING.JUMP:
                 Jump();
