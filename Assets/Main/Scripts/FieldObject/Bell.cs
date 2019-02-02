@@ -33,7 +33,7 @@ public class Bell : MonoBehaviour {
 			Physics2D.IgnoreLayerCollision( _bell, _enemy, false );
 		}
 
-		if ( collision.tag == "Enemy" ) {
+		if ( collision.tag == "Enemy"	 ) {
 			_bellCollision = collision.gameObject.GetComponent<EnemyBellCollision>( );
 			_bellCollision.setMovable( false );
 		}

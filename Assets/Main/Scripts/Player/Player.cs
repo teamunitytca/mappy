@@ -4,33 +4,34 @@ public class Player : Entity {
 	GameObject _startPos = null;
 	GameObject _trampolin = null;
 	LifeCounter _life = null;
-	[SerializeField]
-	Animator _anim = null;
+	[SerializeField] Animator _anim = null;
 
 	[SerializeField] uint _currentFloor;
 	[SerializeField] uint _prevFloor;
 
+	const float REVIVAL_TIME = 2;
+	[SerializeField] float _revival_timer = 0;
+	bool _revival_flag = false;
 
+	LayerMask _player_layer;
+	LayerMask _enemy_layer;
 
 	// Use this for initialization
 	void Start( ) {
 		_life = GameObject.Find( "LifeCounter" ).GetComponent<LifeCounter>( );
 		_startPos = GameObject.Find( "StartPos" );
+		_player_layer = LayerMask.NameToLayer( "Player" );
+		_enemy_layer = LayerMask.NameToLayer( "Enemy" );
 	}
 
 	private void Update( ) {
 		updateState( );
 		updateAnimState( );
+		revival( );
 	}
 
 	void FixedUpdate( ) {
 		Move( );
-	}
-
-	void OnBecameInvisible( ) {
-		_life.loseLife( );
-		resetPos( );
-		_rigidbody.velocity = Vector2.zero;
 	}
 
 	void updateState( ) {
@@ -42,6 +43,13 @@ public class Player : Entity {
 			}
 		} else if ( _state != MOVING.JUMP ) {
 			_state = MOVING.IDLE;
+		}
+		if ( transform.position.y <= -0.7f ) {
+			_life.loseLife( );
+			resetPos( );
+			_rigidbody.velocity = Vector2.zero;
+			_revival_flag = true;
+			_revival_timer = REVIVAL_TIME;
 		}
 	}
 
@@ -69,8 +77,23 @@ public class Player : Entity {
 	}
 
 	void resetPos( ) {
-		if ( _startPos != null ) {
+		if ( _startPos ) {
 			transform.position = _startPos.transform.position;
+		}
+	}
+
+	void revival( ) {
+		if ( _revival_flag ) {
+			if ( _revival_timer > 0 ) {
+				Physics2D.IgnoreLayerCollision( _player_layer, _enemy_layer, true );
+				_revival_timer -= Time.deltaTime;
+				GetComponent<SpriteRenderer>( ).enabled = !GetComponent<SpriteRenderer>( ).enabled;
+			}
+			if ( _revival_timer <= 0 ) {
+				Physics2D.IgnoreLayerCollision( _player_layer, _enemy_layer, false );
+				_revival_flag = false;
+				GetComponent<SpriteRenderer>( ).enabled = true;
+			}
 		}
 	}
 
@@ -78,6 +101,8 @@ public class Player : Entity {
 		if ( collision.gameObject.tag == "Enemy" ) {
 			_life.loseLife( );
 			resetPos( );
+			_revival_flag = true;
+			_revival_timer = REVIVAL_TIME;
 		}
 		if ( collision.gameObject.tag == "Floor" && _trampolin != null ) {
 			_trampolin.gameObject.GetComponent<Trampoline>( ).resetTrampolineHP( );

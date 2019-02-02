@@ -25,7 +25,7 @@ public class Trampoline : MonoBehaviour {
 	void Update( ) {
 		if ( _pre_HP != _trampoline_HP ) {
 			_pre_HP = _trampoline_HP;
-			changeColor( );
+			_trampoline_anim.SetInteger( "HP", _trampoline_HP );
 		}
 		if ( _trampoline_HP <= 0 ) {
 			_col [ 1 ].isTrigger = true;
@@ -33,10 +33,6 @@ public class Trampoline : MonoBehaviour {
 		}
 
 		_col [ 1 ].isTrigger = false;
-	}
-
-	void changeColor( ) {
-		_trampoline_anim.SetInteger( "HP", _trampoline_HP );
 	}
 
 	void OnCollisionEnter2D( Collision2D collision ) {

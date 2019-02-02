@@ -10,8 +10,8 @@ public class ItemScore : Item {
 	const int SAFE_SCORE          = 500;
 
 	NowScore _score;
-	AudioSource _item_se;
 	LifeCounter _life_counter;
+	AudioSource _item_se;
 
 	// Use this for initialization
 	void Start ( ) {
