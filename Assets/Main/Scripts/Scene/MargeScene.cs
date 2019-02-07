@@ -5,7 +5,7 @@ public class MargeScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ( ) {
-		margeScene( "Stage" );
+		margeScene( "Map" );
 	}
 
 	// Update is called once per frame

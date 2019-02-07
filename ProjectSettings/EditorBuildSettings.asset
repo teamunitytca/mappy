@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/Alpha.unity
     guid: f21a8a45f2c2e8641bc9fe92cfa77435
   - enabled: 1
-    path: Assets/Main/Scenes/Stage.unity
-    guid: 6009fa3ffd4c9c24aa54183bbbe1ff39
-  - enabled: 1
     path: Assets/Main/Scenes/Main.unity
     guid: fadfc94a2f4a51949add907cfa70afd4
+  - enabled: 1
+    path: Assets/Main/Scenes/Map.unity
+    guid: 001d830497042ea408e9ce8d7e13f514
   - enabled: 1
     path: Assets/Main/Scenes/Result.unity
     guid: 95128910358a78a4cb5c6cb6a5d60706
   - enabled: 0
     path: Assets/kiyono/test.unity
     guid: 003a067b8ac4e5140b951ba4a3bcbece
+  - enabled: 0
+    path: Assets/Main/Scenes/Stage.unity
+    guid: 6009fa3ffd4c9c24aa54183bbbe1ff39
