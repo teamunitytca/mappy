@@ -364,6 +364,20 @@ Prefab:
       propertyPath: m_TagString
       value: LifeCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 114024645450268580, guid: 915f1a96ed5359744ae2ac9b4c2f31e4,
+        type: 2}
+      propertyPath: _death_se
+      value: 
+      objectReference: {fileID: 341793891}
+    - target: {fileID: 114037330165731096, guid: 915f1a96ed5359744ae2ac9b4c2f31e4,
+        type: 2}
+      propertyPath: _time_limit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202973142946408, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 915f1a96ed5359744ae2ac9b4c2f31e4, type: 2}
   m_IsPrefabParent: 0
@@ -408,7 +422,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -419,7 +433,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 0.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
