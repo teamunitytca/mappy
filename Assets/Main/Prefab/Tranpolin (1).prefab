@@ -9,49 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1130666161857868}
+  m_RootGameObject: {fileID: 1324688603036338}
   m_IsPrefabParent: 1
---- !u!1 &1130666161857868
+--- !u!1 &1324688603036338
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4845129934137402}
-  - component: {fileID: 212178361553820108}
-  - component: {fileID: 95273821539665808}
-  - component: {fileID: 114415881026041704}
-  - component: {fileID: 50795660706885004}
-  - component: {fileID: 70930275386321112}
-  - component: {fileID: 61526801186563096}
+  - component: {fileID: 4777256281908534}
+  - component: {fileID: 212533659720431126}
+  - component: {fileID: 95237924553440472}
+  - component: {fileID: 114632161585907386}
+  - component: {fileID: 50590575683234398}
+  - component: {fileID: 70596202826903310}
+  - component: {fileID: 61326100277957202}
   m_Layer: 0
   m_Name: Tranpolin (1)
-  m_TagString: Untagged
+  m_TagString: Trampolin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4845129934137402
+--- !u!4 &4777256281908534
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.098, y: -1.178, z: 0}
+  m_LocalPosition: {x: 3.597, y: -0.341, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50795660706885004
+--- !u!50 &50590575683234398
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,14 +63,14 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &61526801186563096
+--- !u!61 &61326100277957202
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -90,12 +90,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38, y: 0.05}
   m_EdgeRadius: 0
---- !u!70 &70930275386321112
+--- !u!70 &70596202826903310
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -105,13 +105,13 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0042545996, y: 0.038966823}
   m_Size: {x: 0.28030917, y: 0.044723302}
   m_Direction: 1
---- !u!95 &95273821539665808
+--- !u!95 &95237924553440472
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6577072bb8a83784bb5e65990c56ab84, type: 2}
@@ -122,24 +122,25 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114415881026041704
+--- !u!114 &114632161585907386
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da8b230b8642fad46b1b6d7e58dd148d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trampoline_no: 0
---- !u!212 &212178361553820108
+  _velocity: {x: 0, y: 350}
+  _trampoline_no: 2
+--- !u!212 &212533659720431126
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1130666161857868}
+  m_GameObject: {fileID: 1324688603036338}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -168,7 +169,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 77e61e8cfff191b4f85a3f48582bdbd6, type: 3}
+  m_Sprite: {fileID: 21300024, guid: 77e61e8cfff191b4f85a3f48582bdbd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
