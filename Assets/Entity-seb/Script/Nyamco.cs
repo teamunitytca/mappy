@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class Nyamco : Entity
 {
+     void FixedUpdate()
+    {
+        if ((int)(_lastPos.x * 100) == (int)(transform.position.x * 100) && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
+        {
+            UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
+            SetRandomDir();
+        }
+
+        CheckFall();
+        Move();
+
+        _animator.SetBool("Falled", _falled);
+        _animator.SetFloat("Speed", Mathf.Abs(_lastPos.x - transform.position.x));
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         int rng = UnityEngine.Random.Range(0, 3);
@@ -38,5 +53,4 @@ public class Nyamco : Entity
         _isOnGrond = true;
         SetRandomDir();
     }
-
 }

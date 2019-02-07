@@ -35,18 +35,10 @@ public class Trampoline : MonoBehaviour {
 		_col [ 1 ].isTrigger = false;
 	}
 
-	void OnCollisionEnter2D( Collision2D collision ) {
-		if ( _ontop && ( collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" ) ) {
-			if ( collision.gameObject.tag == "Player" ) {
-				_trampoline_se.PlayOneShot( _trampoline_se.clip );
-			}
-			_trampoline_anim.SetBool( "OnBound", true );
-			collision.gameObject.GetComponent<Entity>( ).SetState( Entity.MOVING.JUMP );
-		}
-	}
-
 	void OnCollisionStay2D( Collision2D collision ) {
-		if ( _ontop && ( collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" ) ) {
+
+		if ( _ontop && ( collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" ) ) 
+		{
 			_trampoline_anim.SetBool( "OnBound", true );
 			collision.gameObject.GetComponent<Entity>( ).SetState( Entity.MOVING.JUMP );
 		}
@@ -54,6 +46,14 @@ public class Trampoline : MonoBehaviour {
 
 	void OnTriggerEnter2D( Collider2D collision ) {
 		_ontop = true;
+
+		if ( _ontop && ( collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy" ) ) {
+			if ( collision.gameObject.tag == "Player" ) {
+				_trampoline_se.PlayOneShot( _trampoline_se.clip );
+			}
+			_trampoline_anim.SetBool( "OnBound", true );
+			collision.gameObject.GetComponent<Entity>( ).SetState( Entity.MOVING.JUMP );
+		}
 	}
 
 	void OnTriggerExit2D( Collider2D collision ) {

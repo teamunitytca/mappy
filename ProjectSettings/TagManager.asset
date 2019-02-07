@@ -21,6 +21,7 @@ TagManager:
   - HurryUpText
   - Trampolin
   - LifeCounter
+  - NowScoreText
   layers:
   - Default
   - TransparentFX

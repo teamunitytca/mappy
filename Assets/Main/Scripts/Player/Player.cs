@@ -32,6 +32,9 @@ public class Player : Entity {
 
 	void FixedUpdate( ) {
 		Move( );
+
+		if (_rigidbody.velocity.y > 0.01f)
+			ignoreDeath = true;
 	}
 
 	void updateState( ) {
@@ -98,7 +101,7 @@ public class Player : Entity {
 	}
 
 	void OnCollisionEnter2D( Collision2D collision ) {
-		if ( collision.gameObject.tag == "Enemy" ) {
+		if ( collision.gameObject.tag == "Enemy"  && !ignoreDeath) {
 			_life.loseLife( );
 			resetPos( );
 			_revival_flag = true;

@@ -46,6 +46,7 @@ public class Entity : MonoBehaviour
     protected Collider2D _collider;
 
     protected GameObject _player;
+    protected bool ignoreDeath = false;
 
     private uint _currentFallTime = 100;
 
@@ -119,12 +120,14 @@ public class Entity : MonoBehaviour
         switch (_state)
         {
             case MOVING.LEFT:
+                ignoreDeath = false;
                 _rigidbody.WakeUp();
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 				transform.position += new Vector3( -_movementSpeed, 0, 0 );
 				_anim_state = ANIM_STATE.MOVE;
 				break;
             case MOVING.RIGTH:
+                ignoreDeath = false;
                 _rigidbody.WakeUp();
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 				transform.position += new Vector3( _movementSpeed, 0, 0 );
@@ -136,9 +139,11 @@ public class Entity : MonoBehaviour
 				_anim_state = ANIM_STATE.IDLE;
                 break;
 			case MOVING.FALLED:
+                ignoreDeath = false;
                 _rigidbody.WakeUp();
                 break;
             case MOVING.JUMP:
+                ignoreDeath = true;
                 Jump();
 				_anim_state = ANIM_STATE.JUMP;
 				break;
