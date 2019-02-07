@@ -108,12 +108,16 @@ public class Player : Entity {
 			_trampolin.gameObject.GetComponent<Trampoline>( ).resetTrampolineHP( );
 			_trampolin = null;
 		}
+		if ( collision.gameObject.tag == "Floor" ) {
+			Physics2D.IgnoreLayerCollision( _player_layer, _enemy_layer, false );
+		}
 		_movable = true;
 	}
 
 	void OnTriggerEnter2D( Collider2D collision ) {
 		if ( collision.gameObject.tag == "Trampolin" ) {
 			_trampolin = collision.gameObject;
+			Physics2D.IgnoreLayerCollision( _player_layer, _enemy_layer, true );
 		}
 	}
 

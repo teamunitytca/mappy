@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4288066423748512}
   - component: {fileID: 58809656173251714}
   - component: {fileID: 114047952390459308}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114195736030687506}
   - component: {fileID: 58331533348488508}
   - component: {fileID: 95987147731506230}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1707755576342338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3884134, y: -0.1143547, z: 0}
+  m_LocalPosition: {x: 4.228, y: 0.152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4288066423748512}
@@ -186,10 +186,10 @@ MonoBehaviour:
   _falled: 0
   _fallTime: 100
   _movable: 1
-  _startPos: {fileID: 0}
   _anim: {fileID: 95987147731506230}
   _currentFloor: 0
   _prevFloor: 0
+  _revival_timer: 0
 --- !u!114 &114944380910239536
 MonoBehaviour:
   m_ObjectHideFlags: 1
