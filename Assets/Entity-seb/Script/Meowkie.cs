@@ -31,15 +31,6 @@ public class Meowkie : Entity
             {
                 SetRandomDir();
                 _rigidbody.WakeUp();
-
-                if (_state == MOVING.LEFT)
-                {
-                    _rigidbody.AddForce(new Vector2(-400,0));
-                }
-                if (_state == MOVING.RIGTH)
-                {
-                    _rigidbody.AddForce(new Vector2(400, 0));
-                }
             }
             else if (rng == 0)
             {

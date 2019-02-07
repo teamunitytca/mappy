@@ -4,36 +4,26 @@ using UnityEngine;
 
 public class Nyamco : Entity
 {
-    void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            _rigidbody.velocity = new Vector2(0, 3);
-        }
-
-
-        if (Mathf.Abs(_rigidbody.velocity.x) < 0.00001f && Mathf.Abs(_rigidbody.velocity.y) < 0.001f && !_falled)
-        {
-            UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
-            SetRandomDir();
-        }
-
-        CheckFall();
-        Move();
-
-        _animator.SetBool("Falled", _falled);
-        _animator.SetFloat("Speed", Mathf.Abs(_rigidbody.velocity.x * 100));
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         int rng = UnityEngine.Random.Range(0, 3);
 
         if (collision.tag == "FloorJumpColider")
         {
-            if (rng == 0)
+            if (rng == 0 && collision.GetComponent<JumpOffPoints>().left && collision.GetComponent<JumpOffPoints>().rigth)
+            {
                 SetRandomDir();
+                _rigidbody.WakeUp();
+            }
+            else if (rng == 0)
+            {
+                if (collision.GetComponent<JumpOffPoints>().left)
+                    _state = MOVING.LEFT;
+                if (collision.GetComponent<JumpOffPoints>().rigth)
+                    _state = MOVING.RIGTH;
+
+                _rigidbody.WakeUp();
+            }
         }
     }
 
