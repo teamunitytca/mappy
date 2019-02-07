@@ -543,6 +543,7 @@ GameObject:
   - component: {fileID: 34909408}
   - component: {fileID: 34909409}
   - component: {fileID: 34909410}
+  - component: {fileID: 34909411}
   m_Layer: 0
   m_Name: x3y1
   m_TagString: FloorJumpColider
@@ -588,7 +589,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &34909410
 MonoBehaviour:
@@ -603,6 +604,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &34909411
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 34909407}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &39081777
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4777256281908534, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
@@ -1057,6 +1078,7 @@ GameObject:
   - component: {fileID: 55643183}
   - component: {fileID: 55643184}
   - component: {fileID: 55643185}
+  - component: {fileID: 55643186}
   m_Layer: 0
   m_Name: x0y6
   m_TagString: FloorJumpColider
@@ -1102,7 +1124,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27166945, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &55643185
 MonoBehaviour:
@@ -1117,6 +1139,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &55643186
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55643182}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &81541662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1243,7 @@ GameObject:
   - component: {fileID: 81679765}
   - component: {fileID: 81679766}
   - component: {fileID: 81679767}
+  - component: {fileID: 81679768}
   m_Layer: 0
   m_Name: x2y4
   m_TagString: FloorJumpColider
@@ -1246,7 +1289,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2769785, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &81679767
 MonoBehaviour:
@@ -1261,6 +1304,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &81679768
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81679764}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &85789394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,6 +1851,7 @@ GameObject:
   - component: {fileID: 109257553}
   - component: {fileID: 109257554}
   - component: {fileID: 109257555}
+  - component: {fileID: 109257556}
   m_Layer: 0
   m_Name: x0y3
   m_TagString: FloorJumpColider
@@ -1833,7 +1897,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2730835, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &109257555
 MonoBehaviour:
@@ -1848,6 +1912,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &109257556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109257552}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &112915508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2141,7 @@ GameObject:
   - component: {fileID: 126129032}
   - component: {fileID: 126129033}
   - component: {fileID: 126129034}
+  - component: {fileID: 126129035}
   m_Layer: 0
   m_Name: x1y2
   m_TagString: FloorJumpColider
@@ -2102,7 +2187,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28964913, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &126129034
 MonoBehaviour:
@@ -2117,6 +2202,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &126129035
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126129031}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &128179838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,6 +2600,7 @@ GameObject:
   - component: {fileID: 166226003}
   - component: {fileID: 166226005}
   - component: {fileID: 166226004}
+  - component: {fileID: 166226006}
   m_Layer: 0
   m_Name: y1
   m_TagString: Untagged
@@ -2509,7 +2615,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 166226002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 717917986}
@@ -2553,6 +2659,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.04030633}
   m_EdgeRadius: 0
+--- !u!50 &166226006
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166226002}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1001 &186942348
 Prefab:
   m_ObjectHideFlags: 0
@@ -4309,6 +4435,7 @@ GameObject:
   - component: {fileID: 353761159}
   - component: {fileID: 353761160}
   - component: {fileID: 353761161}
+  - component: {fileID: 353761162}
   m_Layer: 0
   m_Name: x2y3
   m_TagString: FloorJumpColider
@@ -4354,7 +4481,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2769785, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &353761161
 MonoBehaviour:
@@ -4369,6 +4496,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &353761162
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353761158}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &362714089
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,6 +4927,7 @@ GameObject:
   - component: {fileID: 391390962}
   - component: {fileID: 391390963}
   - component: {fileID: 391390964}
+  - component: {fileID: 391390965}
   m_Layer: 0
   m_Name: x0y1
   m_TagString: FloorJumpColider
@@ -4825,7 +4973,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2716694, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &391390964
 MonoBehaviour:
@@ -4840,6 +4988,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &391390965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391390961}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &392186440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5023,6 +5191,7 @@ GameObject:
   - component: {fileID: 411220357}
   - component: {fileID: 411220358}
   - component: {fileID: 411220359}
+  - component: {fileID: 411220360}
   m_Layer: 0
   m_Name: x0y2
   m_TagString: FloorJumpColider
@@ -5068,7 +5237,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2716694, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &411220359
 MonoBehaviour:
@@ -5083,6 +5252,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &411220360
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 411220356}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &413397704
 GameObject:
   m_ObjectHideFlags: 0
@@ -5396,6 +5585,7 @@ GameObject:
   - component: {fileID: 437772975}
   - component: {fileID: 437772976}
   - component: {fileID: 437772977}
+  - component: {fileID: 437772978}
   m_Layer: 0
   m_Name: x1y1
   m_TagString: FloorJumpColider
@@ -5441,7 +5631,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331387, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &437772977
 MonoBehaviour:
@@ -5456,6 +5646,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &437772978
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 437772974}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &455110694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5566,6 +5776,7 @@ GameObject:
   - component: {fileID: 463001285}
   - component: {fileID: 463001286}
   - component: {fileID: 463001287}
+  - component: {fileID: 463001288}
   m_Layer: 0
   m_Name: x2y5
   m_TagString: FloorJumpColider
@@ -5611,7 +5822,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &463001287
 MonoBehaviour:
@@ -5626,6 +5837,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &463001288
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463001284}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &477106232
 GameObject:
   m_ObjectHideFlags: 0
@@ -7725,7 +7956,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717917985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1970690910}
@@ -7993,6 +8224,7 @@ GameObject:
   - component: {fileID: 805376657}
   - component: {fileID: 805376658}
   - component: {fileID: 805376659}
+  - component: {fileID: 805376660}
   m_Layer: 0
   m_Name: x3y0
   m_TagString: FloorJumpColider
@@ -8038,7 +8270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &805376659
 MonoBehaviour:
@@ -8053,6 +8285,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &805376660
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805376656}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &814342948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8234,6 +8486,7 @@ GameObject:
   - component: {fileID: 820196776}
   - component: {fileID: 820196777}
   - component: {fileID: 820196778}
+  - component: {fileID: 820196779}
   m_Layer: 0
   m_Name: x0y5
   m_TagString: FloorJumpColider
@@ -8279,7 +8532,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27166945, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &820196778
 MonoBehaviour:
@@ -8294,6 +8547,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &820196779
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820196775}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &829739020
 GameObject:
   m_ObjectHideFlags: 0
@@ -9535,6 +9808,7 @@ GameObject:
   - component: {fileID: 967595704}
   - component: {fileID: 967595705}
   - component: {fileID: 967595706}
+  - component: {fileID: 967595707}
   m_Layer: 0
   m_Name: x2y1
   m_TagString: FloorJumpColider
@@ -9580,7 +9854,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.270643, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &967595706
 MonoBehaviour:
@@ -9595,6 +9869,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &967595707
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967595703}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &970334624
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,6 +10748,7 @@ GameObject:
   - component: {fileID: 1066244856}
   - component: {fileID: 1066244857}
   - component: {fileID: 1066244858}
+  - component: {fileID: 1066244859}
   m_Layer: 0
   m_Name: x1y3
   m_TagString: FloorJumpColider
@@ -10499,7 +10794,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2959845, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1066244858
 MonoBehaviour:
@@ -10514,6 +10809,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1066244859
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066244855}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1075622410
 GameObject:
   m_ObjectHideFlags: 0
@@ -10538,7 +10853,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1075622410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8700001, y: 0.83, z: 0}
+  m_LocalPosition: {x: 2.8700001, y: 0.937, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2016520719}
@@ -11486,31 +11801,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4227398723440136, guid: 506a88bd2602e5342a29642d759e8bf5, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 212606906600464792, guid: 506a88bd2602e5342a29642d759e8bf5,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300012, guid: 77e61e8cfff191b4f85a3f48582bdbd6,
-        type: 3}
     - target: {fileID: 1487206170785476, guid: 506a88bd2602e5342a29642d759e8bf5, type: 2}
       propertyPath: m_Name
       value: Tranpolin (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114963630983393100, guid: 506a88bd2602e5342a29642d759e8bf5,
-        type: 2}
-      propertyPath: _trampoline_no
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1487206170785476, guid: 506a88bd2602e5342a29642d759e8bf5, type: 2}
-      propertyPath: m_TagString
-      value: Trampolin
-      objectReference: {fileID: 0}
-    - target: {fileID: 50991207219603930, guid: 506a88bd2602e5342a29642d759e8bf5,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 506a88bd2602e5342a29642d759e8bf5, type: 2}
@@ -12370,6 +12665,7 @@ GameObject:
   - component: {fileID: 1315208862}
   - component: {fileID: 1315208863}
   - component: {fileID: 1315208864}
+  - component: {fileID: 1315208865}
   m_Layer: 0
   m_Name: x1y0
   m_TagString: FloorJumpColider
@@ -12415,7 +12711,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.270643, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1315208864
 MonoBehaviour:
@@ -12430,6 +12726,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1315208865
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315208861}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1324332855
 GameObject:
   m_ObjectHideFlags: 0
@@ -13439,6 +13755,7 @@ GameObject:
   - component: {fileID: 1418588612}
   - component: {fileID: 1418588613}
   - component: {fileID: 1418588614}
+  - component: {fileID: 1418588615}
   m_Layer: 0
   m_Name: x2y2
   m_TagString: FloorJumpColider
@@ -13484,7 +13801,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2769785, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1418588614
 MonoBehaviour:
@@ -13499,6 +13816,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1418588615
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418588611}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1436838987
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,6 +13946,7 @@ GameObject:
   - component: {fileID: 1446900064}
   - component: {fileID: 1446900065}
   - component: {fileID: 1446900066}
+  - component: {fileID: 1446900067}
   m_Layer: 0
   m_Name: x0y4
   m_TagString: FloorJumpColider
@@ -13654,7 +13992,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2730835, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1446900066
 MonoBehaviour:
@@ -13669,6 +14007,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &1446900067
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446900063}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1448317837
 GameObject:
   m_ObjectHideFlags: 0
@@ -13680,6 +14038,7 @@ GameObject:
   - component: {fileID: 1448317838}
   - component: {fileID: 1448317839}
   - component: {fileID: 1448317840}
+  - component: {fileID: 1448317841}
   m_Layer: 0
   m_Name: x3y6
   m_TagString: FloorJumpColider
@@ -13725,7 +14084,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1448317840
 MonoBehaviour:
@@ -13740,6 +14099,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &1448317841
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1448317837}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1452387537
 GameObject:
   m_ObjectHideFlags: 0
@@ -13850,6 +14229,7 @@ GameObject:
   - component: {fileID: 1481057267}
   - component: {fileID: 1481057268}
   - component: {fileID: 1481057269}
+  - component: {fileID: 1481057270}
   m_Layer: 0
   m_Name: x2y6
   m_TagString: FloorJumpColider
@@ -13895,7 +14275,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1481057269
 MonoBehaviour:
@@ -13910,6 +14290,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1481057270
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481057266}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1488079931
 GameObject:
   m_ObjectHideFlags: 0
@@ -14020,6 +14420,7 @@ GameObject:
   - component: {fileID: 1496155780}
   - component: {fileID: 1496155781}
   - component: {fileID: 1496155782}
+  - component: {fileID: 1496155783}
   m_Layer: 0
   m_Name: x3y4
   m_TagString: FloorJumpColider
@@ -14065,7 +14466,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1496155782
 MonoBehaviour:
@@ -14080,6 +14481,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &1496155783
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1496155779}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1497357157
 GameObject:
   m_ObjectHideFlags: 0
@@ -14625,7 +15046,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539607420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 920854793}
@@ -15468,6 +15889,7 @@ GameObject:
   - component: {fileID: 1597610379}
   - component: {fileID: 1597610380}
   - component: {fileID: 1597610381}
+  - component: {fileID: 1597610382}
   m_Layer: 0
   m_Name: x1y6
   m_TagString: FloorJumpColider
@@ -15513,7 +15935,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29000342, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1597610381
 MonoBehaviour:
@@ -15528,6 +15950,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1597610382
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597610378}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1620762629
 GameObject:
   m_ObjectHideFlags: 0
@@ -16034,6 +16476,7 @@ GameObject:
   - component: {fileID: 1648568215}
   - component: {fileID: 1648568216}
   - component: {fileID: 1648568217}
+  - component: {fileID: 1648568218}
   m_Layer: 0
   m_Name: x1y5
   m_TagString: FloorJumpColider
@@ -16079,7 +16522,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29000342, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1648568217
 MonoBehaviour:
@@ -16094,6 +16537,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1648568218
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1648568214}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1652475359
 GameObject:
   m_ObjectHideFlags: 0
@@ -16303,6 +16766,7 @@ GameObject:
   - component: {fileID: 1662090374}
   - component: {fileID: 1662090375}
   - component: {fileID: 1662090376}
+  - component: {fileID: 1662090377}
   m_Layer: 0
   m_Name: x3y3
   m_TagString: FloorJumpColider
@@ -16348,7 +16812,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1662090376
 MonoBehaviour:
@@ -16363,6 +16827,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &1662090377
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662090373}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1665064901
 GameObject:
   m_ObjectHideFlags: 0
@@ -17176,6 +17660,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 70834987356093080, guid: b0ddb4529b828cb44a87e8a509fe1d39,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.031491578
+      objectReference: {fileID: 0}
+    - target: {fileID: 70834987356093080, guid: b0ddb4529b828cb44a87e8a509fe1d39,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.10362446
+      objectReference: {fileID: 0}
+    - target: {fileID: 70834987356093080, guid: b0ddb4529b828cb44a87e8a509fe1d39,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.0040920973
+      objectReference: {fileID: 0}
+    - target: {fileID: 70834987356093080, guid: b0ddb4529b828cb44a87e8a509fe1d39,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.059078455
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0ddb4529b828cb44a87e8a509fe1d39, type: 2}
   m_IsPrefabParent: 0
@@ -17664,6 +18168,7 @@ GameObject:
   - component: {fileID: 1799615434}
   - component: {fileID: 1799615435}
   - component: {fileID: 1799615436}
+  - component: {fileID: 1799615437}
   m_Layer: 0
   m_Name: x2y0
   m_TagString: FloorJumpColider
@@ -17709,7 +18214,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.270643, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1799615436
 MonoBehaviour:
@@ -17724,6 +18229,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &1799615437
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799615433}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1808946758
 GameObject:
   m_ObjectHideFlags: 0
@@ -18075,6 +18600,7 @@ GameObject:
   - component: {fileID: 1855885906}
   - component: {fileID: 1855885907}
   - component: {fileID: 1855885908}
+  - component: {fileID: 1855885909}
   m_Layer: 0
   m_Name: x3y2
   m_TagString: FloorJumpColider
@@ -18120,7 +18646,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &1855885908
 MonoBehaviour:
@@ -18135,6 +18661,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &1855885909
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855885905}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &1857538446
 GameObject:
   m_ObjectHideFlags: 0
@@ -18942,6 +19488,7 @@ GameObject:
   - component: {fileID: 1970690910}
   - component: {fileID: 1970690912}
   - component: {fileID: 1970690911}
+  - component: {fileID: 1970690913}
   m_Layer: 0
   m_Name: y0
   m_TagString: Untagged
@@ -18956,7 +19503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970690909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.089, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 717917986}
@@ -19000,6 +19547,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.034323394}
   m_EdgeRadius: 0
+--- !u!50 &1970690913
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970690909}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1001 &1971149246
 Prefab:
   m_ObjectHideFlags: 0
@@ -19037,7 +19604,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4777256281908534, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
@@ -19197,6 +19764,7 @@ GameObject:
   - component: {fileID: 2016520719}
   - component: {fileID: 2016520720}
   - component: {fileID: 2016520721}
+  - component: {fileID: 2016520722}
   m_Layer: 0
   m_Name: x0y0
   m_TagString: FloorJumpColider
@@ -19242,7 +19810,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27308345, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &2016520721
 MonoBehaviour:
@@ -19257,6 +19825,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 0
   rigth: 1
+--- !u!50 &2016520722
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016520718}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1001 &2031138765
 Prefab:
   m_ObjectHideFlags: 0
@@ -19484,6 +20072,7 @@ GameObject:
   - component: {fileID: 2075284155}
   - component: {fileID: 2075284156}
   - component: {fileID: 2075284157}
+  - component: {fileID: 2075284158}
   m_Layer: 0
   m_Name: x3y5
   m_TagString: FloorJumpColider
@@ -19529,7 +20118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28331375, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &2075284157
 MonoBehaviour:
@@ -19544,6 +20133,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 0
+--- !u!50 &2075284158
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2075284154}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!4 &2077800575 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4222577617018332, guid: c50ec535832559a49a91396c45e4f4ff,
@@ -19819,7 +20428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4777256281908534, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
@@ -19960,7 +20569,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4777256281908534, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f64363b6fd20d47e18bfbcf4df813ab6, type: 2}
@@ -19976,6 +20585,7 @@ GameObject:
   - component: {fileID: 2145037583}
   - component: {fileID: 2145037584}
   - component: {fileID: 2145037585}
+  - component: {fileID: 2145037586}
   m_Layer: 0
   m_Name: x1y4
   m_TagString: FloorJumpColider
@@ -20021,7 +20631,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2959845, y: 0.06}
+  m_Size: {x: 0.4, y: 0.06}
   m_EdgeRadius: 0
 --- !u!114 &2145037585
 MonoBehaviour:
@@ -20036,6 +20646,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   rigth: 1
+--- !u!50 &2145037586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145037582}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &2147356189
 GameObject:
   m_ObjectHideFlags: 0

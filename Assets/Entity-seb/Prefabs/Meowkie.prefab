@@ -76,8 +76,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0035828203, y: -0.011680812}
-  m_Size: {x: 0.06192643, y: 0.1260365}
+  m_Offset: {x: 0, y: -0.03}
+  m_Size: {x: 0.04, y: 0.09}
   m_Direction: 0
 --- !u!95 &95763174971560814
 Animator:

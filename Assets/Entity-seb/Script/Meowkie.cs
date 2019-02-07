@@ -23,7 +23,7 @@ public class Meowkie : Entity
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        int rng = UnityEngine.Random.Range(0, 3);
+        int rng = UnityEngine.Random.Range(0, 2);
 
         if (collision.tag == "FloorJumpColider")
         {
